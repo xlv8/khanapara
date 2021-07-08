@@ -21,3 +21,7 @@ A web crawler which crawls the **Stack Overflow** website. (Questions and Answer
 - https://stackapps.com/questions/7/how-to-list-your-application-library-wrapper-script-here
 - http://stackapps.com/apps/oauth/register
 - https://api.stackexchange.com/docs/throttle
+- https://api.stackexchange.com/docs/authentication
+- https://api.stackexchange.com/docs/write
+
+-------
