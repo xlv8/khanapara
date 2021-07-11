@@ -25,3 +25,9 @@ A web crawler which crawls the **Stack Overflow** website. (Questions and Answer
 - https://api.stackexchange.com/docs/write
 
 -------
+
+It's same as a fork and depends on some other projects on the GitHub:
+
+- https://www.crummy.com/software/BeautifulSoup/bs4/doc/
+- https://pypi.org/project/bs4/
+- https://pypi.org/project/beautifulsoup4/
