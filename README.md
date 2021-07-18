@@ -53,3 +53,12 @@ Why is processing a sorted array faster than processing an unsorted array?
 <pre class="lang-cpp prettyprint-override"><code>#include &lt;algorithm&gt;
 #include &lt;ctime&gt;
 #include &lt;iostream&gt;
+
+int main()
+{
+	// Generate data
+	const unsigned arraySize = 32768;
+	int data[arraySize];
+
+	for (unsigned c = 0; c &lt; arraySize; ++c)
+		data[c] = std::rand() % 256;
