@@ -48,3 +48,8 @@ $ python3 craw.py
 crawling page 1: https://stackoverflow.com/questions/tagged/c%2b%2b?sort=votes&page=1&pageSize=15
 ------------------------------
 Why is processing a sorted array faster than processing an unsorted array?
+<div class="post-text" itemprop="text">
+<p>Here is a piece of C++ code that shows some very peculiar behavior. For some strange reason, sorting the data miraculously makes the code almost six times faster:</p>
+<pre class="lang-cpp prettyprint-override"><code>#include &lt;algorithm&gt;
+#include &lt;ctime&gt;
+#include &lt;iostream&gt;
