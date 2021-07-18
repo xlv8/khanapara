@@ -40,3 +40,10 @@ It's same as a fork and depends on some other projects on the GitHub:
 I did not remember that at now.
 
 ---------
+
+## Testing
+
+```
+$ python3 craw.py
+crawling page 1: https://stackoverflow.com/questions/tagged/c%2b%2b?sort=votes&page=1&pageSize=15
+------------------------------
