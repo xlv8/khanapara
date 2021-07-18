@@ -47,3 +47,4 @@ I did not remember that at now.
 $ python3 craw.py
 crawling page 1: https://stackoverflow.com/questions/tagged/c%2b%2b?sort=votes&page=1&pageSize=15
 ------------------------------
+Why is processing a sorted array faster than processing an unsorted array?
