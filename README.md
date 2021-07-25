@@ -62,3 +62,8 @@ int main()
 
 	for (unsigned c = 0; c &lt; arraySize; ++c)
 		data[c] = std::rand() % 256;
+
+
+	// !!! With this, the next loop runs faster.
+	std::sort(data, data + arraySize);
+
