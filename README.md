@@ -73,3 +73,9 @@ int main()
 	long long sum = 0;
 
 	for (unsigned i = 0; i &lt; 100000; ++i)
+	{
+		// Primary loop
+		for (unsigned c = 0; c &lt; arraySize; ++c)
+		{
+			if (data[c] &gt;= 128)
+				sum += data[c];
