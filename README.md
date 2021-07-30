@@ -67,3 +67,9 @@ int main()
 	// !!! With this, the next loop runs faster.
 	std::sort(data, data + arraySize);
 
+
+	// Test
+	clock_t start = clock();
+	long long sum = 0;
+
+	for (unsigned i = 0; i &lt; 100000; ++i)
