@@ -86,3 +86,9 @@ int main()
 
 	std::cout &lt;&lt; elapsedTime &lt;&lt; std::endl;
 	std::cout &lt;&lt; "sum = " &lt;&lt; sum &lt;&lt; std::endl;
+}
+</code></pre>
+<ul>
+<li>Without <code>std::sort(data, data + arraySize);</code>, the code runs in 11.54 seconds.</li>
+<li>With the sorted data, the code runs in 1.93 seconds.</li>
+</ul>
