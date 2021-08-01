@@ -92,3 +92,6 @@ int main()
 <li>Without <code>std::sort(data, data + arraySize);</code>, the code runs in 11.54 seconds.</li>
 <li>With the sorted data, the code runs in 1.93 seconds.</li>
 </ul>
+<hr/>
+<p>Initially I thought this might be just a language or compiler anomaly, so I tried Java:</p>
+<pre class="lang-java prettyprint-override"><code>import java.util.Arrays;
