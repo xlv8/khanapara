@@ -79,3 +79,10 @@ int main()
 		{
 			if (data[c] &gt;= 128)
 				sum += data[c];
+		}
+	}
+
+	double elapsedTime = static_cast&lt;double&gt;(clock() - start) / CLOCKS_PER_SEC;
+
+	std::cout &lt;&lt; elapsedTime &lt;&lt; std::endl;
+	std::cout &lt;&lt; "sum = " &lt;&lt; sum &lt;&lt; std::endl;
