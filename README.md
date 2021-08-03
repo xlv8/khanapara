@@ -95,3 +95,8 @@ int main()
 <hr/>
 <p>Initially I thought this might be just a language or compiler anomaly, so I tried Java:</p>
 <pre class="lang-java prettyprint-override"><code>import java.util.Arrays;
+import java.util.Random;
+
+public class Main
+{
+	public static void main(String[] args)
