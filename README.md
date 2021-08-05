@@ -100,3 +100,7 @@ import java.util.Random;
 public class Main
 {
 	public static void main(String[] args)
+	{
+		// Generate data
+		int arraySize = 32768;
+		int data[] = new int[arraySize];
