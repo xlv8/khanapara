@@ -104,3 +104,10 @@ public class Main
 		// Generate data
 		int arraySize = 32768;
 		int data[] = new int[arraySize];
+
+		Random rnd = new Random(0);
+		for (int c = 0; c &lt; arraySize; ++c)
+			data[c] = rnd.nextInt() % 256;
+
+
+		// !!! With this, the next loop runs faster
