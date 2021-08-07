@@ -113,3 +113,6 @@ public class Main
 		// !!! With this, the next loop runs faster
 		Arrays.sort(data);
 
+
+		// Test
+		long start = System.nanoTime();
