@@ -119,3 +119,5 @@ public class Main
 		long sum = 0;
 
 		for (int i = 0; i &lt; 100000; ++i)
+		{
+			// Primary loop
