@@ -123,3 +123,5 @@ public class Main
 			// Primary loop
 			for (int c = 0; c &lt; arraySize; ++c)
 			{
+				if (data[c] &gt;= 128)
+					sum += data[c];
