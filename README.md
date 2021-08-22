@@ -121,3 +121,5 @@ public class Main
 		for (int i = 0; i &lt; 100000; ++i)
 		{
 			// Primary loop
+			for (int c = 0; c &lt; arraySize; ++c)
+			{
