@@ -131,3 +131,7 @@ public class Main
 		System.out.println((System.nanoTime() - start) / 1000000000.0);
 		System.out.println("sum = " + sum);
 	}
+}
+</code></pre>
+<p>with a similar but less extreme result.</p>
+<hr/>
