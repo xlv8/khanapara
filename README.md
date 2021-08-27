@@ -138,3 +138,6 @@ public class Main
 <p>My first thought was that sorting brings the data into the cache, but then I thought how silly that was because the array was just generated.</p>
 <ul>
 <li>What is going on?</li>
+<li>Why is processing a sorted array faster than processing an unsorted array? The code is summing up some independent terms, so the order should not matter.</li>
+</ul>
+</div>
