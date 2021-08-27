@@ -135,3 +135,6 @@ public class Main
 </code></pre>
 <p>with a similar but less extreme result.</p>
 <hr/>
+<p>My first thought was that sorting brings the data into the cache, but then I thought how silly that was because the array was just generated.</p>
+<ul>
+<li>What is going on?</li>
