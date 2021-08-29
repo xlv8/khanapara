@@ -141,3 +141,7 @@ public class Main
 <li>Why is processing a sorted array faster than processing an unsorted array? The code is summing up some independent terms, so the order should not matter.</li>
 </ul>
 </div>
+List of answers:
+
+
+===>
