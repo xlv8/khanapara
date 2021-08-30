@@ -148,3 +148,9 @@ List of answers:
 Why is processing a sorted array faster than processing an unsorted array?
 
 You are a victim of branch prediction fail.
+
+What is Branch Prediction?
+Consider a railroad junction:
+
+Image by Mecanismo, via Wikimedia Commons. Used under the CC-By-SA 3.0 license.
+Now for the sake of argument, suppose this is back in the 1800s - before long distance or radio communication.
