@@ -154,3 +154,6 @@ Consider a railroad junction:
 
 Image by Mecanismo, via Wikimedia Commons. Used under the CC-By-SA 3.0 license.
 Now for the sake of argument, suppose this is back in the 1800s - before long distance or radio communication.
+You are the operator of a junction and you hear a train coming. You have no idea which way it is supposed to go. You stop the train to ask the driver which direction they want. And then you set the switch appropriately.
+Trains are heavy and have a lot of inertia. So they take forever to start up and slow down.
+Is there a better way? You guess which direction the train will go!
