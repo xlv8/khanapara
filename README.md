@@ -145,3 +145,6 @@ List of answers:
 
 
 ===>
+Why is processing a sorted array faster than processing an unsorted array?
+
+You are a victim of branch prediction fail.
