@@ -157,3 +157,9 @@ Now for the sake of argument, suppose this is back in the 1800s - before long di
 You are the operator of a junction and you hear a train coming. You have no idea which way it is supposed to go. You stop the train to ask the driver which direction they want. And then you set the switch appropriately.
 Trains are heavy and have a lot of inertia. So they take forever to start up and slow down.
 Is there a better way? You guess which direction the train will go!
+
+If you guessed right, it continues on.
+If you guessed wrong, the captain will stop, back up, and yell at you to flip the switch. Then it can restart down the other path.
+
+If you guess right every time, the train will never have to stop.
+If you guess wrong too often, the train will spend a lot of time stopping, backing up, and restarting.
