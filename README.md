@@ -163,3 +163,5 @@ If you guessed wrong, the captain will stop, back up, and yell at you to flip th
 
 If you guess right every time, the train will never have to stop.
 If you guess wrong too often, the train will spend a lot of time stopping, backing up, and restarting.
+
+Consider an if-statement: At the processor level, it is a branch instruction:
