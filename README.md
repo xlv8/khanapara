@@ -165,3 +165,7 @@ If you guess right every time, the train will never have to stop.
 If you guess wrong too often, the train will spend a lot of time stopping, backing up, and restarting.
 
 Consider an if-statement: At the processor level, it is a branch instruction:
+
+You are a processor and you see a branch. You have no idea which way it will go. What do you do? You halt execution and wait until the previous instructions are complete. Then you continue down the correct path.
+Modern processors are complicated and have long pipelines. So they take forever to "warm up" and "slow down".
+Is there a better way? You guess which direction the branch will go!
