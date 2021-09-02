@@ -169,3 +169,6 @@ Consider an if-statement: At the processor level, it is a branch instruction:
 You are a processor and you see a branch. You have no idea which way it will go. What do you do? You halt execution and wait until the previous instructions are complete. Then you continue down the correct path.
 Modern processors are complicated and have long pipelines. So they take forever to "warm up" and "slow down".
 Is there a better way? You guess which direction the branch will go!
+
+If you guessed right, you continue executing.
+If you guessed wrong, you need to flush the pipeline and roll back to the branch. Then you can restart down the other path.
