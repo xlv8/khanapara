@@ -172,3 +172,6 @@ Is there a better way? You guess which direction the branch will go!
 
 If you guessed right, you continue executing.
 If you guessed wrong, you need to flush the pipeline and roll back to the branch. Then you can restart down the other path.
+
+If you guess right every time, the execution will never have to stop.
+If you guess wrong too often, you spend a lot of time stalling, rolling back, and restarting.
