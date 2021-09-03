@@ -175,3 +175,9 @@ If you guessed wrong, you need to flush the pipeline and roll back to the branch
 
 If you guess right every time, the execution will never have to stop.
 If you guess wrong too often, you spend a lot of time stalling, rolling back, and restarting.
+
+This is branch prediction. I admit it's not the best analogy since the train could just signal the direction with a flag. But in computers, the processor doesn't know which direction a branch will go until the last moment.
+So how would you strategically guess to minimize the number of times that the train must back up and go down the other path? You look at the past history! If the train goes left 99% of the time, then you guess left. If it alternates, then you alternate your guesses. If it goes one way every three times, you guess the same...
+In other words, you try to identify a pattern and follow it. This is more or less how branch predictors work.
+Most applications have well-behaved branches. So modern branch predictors will typically achieve >90% hit rates. But when faced with unpredictable branches with no recognizable patterns, branch predictors are virtually useless.
+Further reading: "Branch predictor" article on Wikipedia.
