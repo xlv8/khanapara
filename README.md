@@ -181,3 +181,5 @@ So how would you strategically guess to minimize the number of times that the tr
 In other words, you try to identify a pattern and follow it. This is more or less how branch predictors work.
 Most applications have well-behaved branches. So modern branch predictors will typically achieve >90% hit rates. But when faced with unpredictable branches with no recognizable patterns, branch predictors are virtually useless.
 Further reading: "Branch predictor" article on Wikipedia.
+
+As hinted from above, the culprit is this if-statement:
