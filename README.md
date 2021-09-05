@@ -183,3 +183,5 @@ Most applications have well-behaved branches. So modern branch predictors will t
 Further reading: "Branch predictor" article on Wikipedia.
 
 As hinted from above, the culprit is this if-statement:
+if (data[c] >= 128)
+	sum += data[c];
