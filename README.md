@@ -185,3 +185,7 @@ Further reading: "Branch predictor" article on Wikipedia.
 As hinted from above, the culprit is this if-statement:
 if (data[c] >= 128)
 	sum += data[c];
+
+Notice that the data is evenly distributed between 0 and 255. When the data is sorted, roughly the first half of the iterations will not enter the if-statement. After that, they will all enter the if-statement.
+This is very friendly to the branch predictor since the branch consecutively goes the same direction many times. Even a simple saturating counter will correctly predict the branch except for the few iterations after it switches direction.
+Quick visualization:
