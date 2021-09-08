@@ -189,3 +189,8 @@ if (data[c] >= 128)
 Notice that the data is evenly distributed between 0 and 255. When the data is sorted, roughly the first half of the iterations will not enter the if-statement. After that, they will all enter the if-statement.
 This is very friendly to the branch predictor since the branch consecutively goes the same direction many times. Even a simple saturating counter will correctly predict the branch except for the few iterations after it switches direction.
 Quick visualization:
+T = branch taken
+N = branch not taken
+
+data[] = 0, 1, 2, 3, 4, ... 126, 127, 128, 129, 130, ... 250, 251, 252, ...
+branch = N  N  N  N  N  ...   N    N    T    T    T  ...   T    T    T  ...
