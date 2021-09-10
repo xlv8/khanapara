@@ -194,3 +194,7 @@ N = branch not taken
 
 data[] = 0, 1, 2, 3, 4, ... 126, 127, 128, 129, 130, ... 250, 251, 252, ...
 branch = N  N  N  N  N  ...   N    N    T    T    T  ...   T    T    T  ...
+
+	   = NNNNNNNNNNNN ... NNNNNNNTTTTTTTTT ... TTTTTTTTTT  (easy to predict)
+
+However, when the data is completely random, the branch predictor is rendered useless, because it can't predict random data. Thus there will probably be around 50% misprediction (no better than random guessing).
