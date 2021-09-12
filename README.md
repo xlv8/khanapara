@@ -209,3 +209,6 @@ If the compiler isn't able to optimize the branch into a conditional move, you c
 Replace:
 if (data[c] >= 128)
 	sum += data[c];
+
+with:
+int t = (data[c] - 128) >> 31;
