@@ -202,3 +202,10 @@ data[] = 226, 185, 125, 158, 198, 144, 217, 79, 202, 118,  14, 150, 177, 182, 13
 branch =   T,   T,   N,   T,   T,   T,   T,  N,   T,   N,   N,   T,   T,   T,   N  ...
 
 	   = TTNTTTTNTNNTTTN ...   (completely random - hard to predict)
+
+
+So what can be done?
+If the compiler isn't able to optimize the branch into a conditional move, you can try some hacks if you are willing to sacrifice readability for performance.
+Replace:
+if (data[c] >= 128)
+	sum += data[c];
