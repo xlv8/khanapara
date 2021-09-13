@@ -220,3 +220,6 @@ Benchmarks: Core i7 920 @ 3.5 GHz
 C++ - Visual Studio 2010 - x64 Release
 //  Branch - Random
 seconds = 11.777
+
+//  Branch - Sorted
+seconds = 2.352
