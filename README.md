@@ -216,3 +216,7 @@ sum += ~t & data[c];
 
 This eliminates the branch and replaces it with some bitwise operations.
 (Note that this hack is not strictly equivalent to the original if-statement. But in this case, it's valid for all the input values of data[].)
+Benchmarks: Core i7 920 @ 3.5 GHz
+C++ - Visual Studio 2010 - x64 Release
+//  Branch - Random
+seconds = 11.777
