@@ -212,3 +212,7 @@ if (data[c] >= 128)
 
 with:
 int t = (data[c] - 128) >> 31;
+sum += ~t & data[c];
+
+This eliminates the branch and replaces it with some bitwise operations.
+(Note that this hack is not strictly equivalent to the original if-statement. But in this case, it's valid for all the input values of data[].)
