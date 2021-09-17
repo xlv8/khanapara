@@ -239,3 +239,8 @@ seconds = 5.643797077
 
 //  Branchless - Random
 seconds = 3.113581453
+
+//  Branchless - Sorted
+seconds = 3.186068823
+
+Observations:
