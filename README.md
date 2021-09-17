@@ -228,3 +228,8 @@ seconds = 2.352
 seconds = 2.564
 
 //  Branchless - Sorted
+seconds = 2.587
+
+Java - NetBeans 7.1.1 JDK 7 - x64
+//  Branch - Random
+seconds = 10.93293813
