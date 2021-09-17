@@ -252,3 +252,6 @@ In the C++ case, the hack is actually a tad slower than with the branch when the
 A general rule of thumb is to avoid data-dependent branching in critical loops (such as in this example).
 
 Update:
+
+GCC 4.6.1 with -O3 or -ftree-vectorize on x64 is able to generate a conditional move. So there is no difference between the sorted and unsorted data - both are fast.
+VC++ 2010 is unable to generate conditional moves for this branch even under /Ox.
