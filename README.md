@@ -248,3 +248,7 @@ Observations:
 With the Branch: There is a huge difference between the sorted and unsorted data.
 With the Hack: There is no difference between sorted and unsorted data.
 In the C++ case, the hack is actually a tad slower than with the branch when the data is sorted.
+
+A general rule of thumb is to avoid data-dependent branching in critical loops (such as in this example).
+
+Update:
