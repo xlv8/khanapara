@@ -272,3 +272,4 @@ Why is processing a sorted array faster than processing an unsorted array?
 The reason why performance improves drastically when the data is sorted is that the branch prediction penalty is removed, as explained beautifully in Mysticial's answer.
 Now, if we look at the code
 if (data[c] >= 128)
+	sum += data[c];
