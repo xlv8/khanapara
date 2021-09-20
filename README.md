@@ -255,3 +255,10 @@ Update:
 
 GCC 4.6.1 with -O3 or -ftree-vectorize on x64 is able to generate a conditional move. So there is no difference between the sorted and unsorted data - both are fast.
 VC++ 2010 is unable to generate conditional moves for this branch even under /Ox.
+Intel C++ Compiler (ICC) 11 does something miraculous. It interchanges the two loops, thereby hoisting the unpredictable branch to the outer loop. So not only is it immune the mispredictions, it is also twice as fast as whatever VC++ and GCC can generate! In other words, ICC took advantage of the test-loop to defeat the benchmark...
+If you give the Intel compiler the branchless code, it just out-right vectorizes it... and is just as fast as with the branch (with the loop interchange).
+
+This goes to show that even mature modern compilers can vary wildly in their ability to optimize code...
+
+===>
+Why is processing a sorted array faster than processing an unsorted array?
