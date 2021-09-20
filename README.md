@@ -264,3 +264,7 @@ This goes to show that even mature modern compilers can vary wildly in their abi
 Why is processing a sorted array faster than processing an unsorted array?
 
 Branch prediction.
+With a sorted array, the condition data[c] >= 128 is first false for a streak of values, then becomes true for all later values. That's easy to predict. With an unsorted array, you pay for the branching cost.
+
+===>
+Why is processing a sorted array faster than processing an unsorted array?
