@@ -262,3 +262,5 @@ This goes to show that even mature modern compilers can vary wildly in their abi
 
 ===>
 Why is processing a sorted array faster than processing an unsorted array?
+
+Branch prediction.
