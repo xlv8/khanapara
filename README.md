@@ -273,3 +273,7 @@ The reason why performance improves drastically when the data is sorted is that 
 Now, if we look at the code
 if (data[c] >= 128)
 	sum += data[c];
+
+we can find that the meaning of this particular if... else... branch is to add something when a condition is satisfied. This type of branch can be easily transformed into a conditional move statement, which would be compiled into a conditional move instruction: cmovl, in an x86 system. The branch and thus the potential branch prediction penalty is removed.
+In C, thus C++, the statement, which would compile directly (without any optimization) into the conditional move instruction in x86, is the ternary operator ... ? ... : .... So we rewrite the above statement into an equivalent one:
+sum += data[c] >=128 ? data[c] : 0;
