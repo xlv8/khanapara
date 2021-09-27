@@ -277,3 +277,9 @@ if (data[c] >= 128)
 we can find that the meaning of this particular if... else... branch is to add something when a condition is satisfied. This type of branch can be easily transformed into a conditional move statement, which would be compiled into a conditional move instruction: cmovl, in an x86 system. The branch and thus the potential branch prediction penalty is removed.
 In C, thus C++, the statement, which would compile directly (without any optimization) into the conditional move instruction in x86, is the ternary operator ... ? ... : .... So we rewrite the above statement into an equivalent one:
 sum += data[c] >=128 ? data[c] : 0;
+
+While maintaining readability, we can check the speedup factor.
+On an Intel Core i7-2600K @ 3.4 GHz and Visual Studio 2010 Release Mode, the benchmark is (format copied from Mysticial):
+x86
+//  Branch - Random
+seconds = 8.885
