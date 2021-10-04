@@ -283,3 +283,8 @@ On an Intel Core i7-2600K @ 3.4 GHz and Visual Studio 2010 Release Mode, the be
 x86
 //  Branch - Random
 seconds = 8.885
+
+//  Branch - Sorted
+seconds = 1.528
+
+//  Branchless - Random
