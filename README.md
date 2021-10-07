@@ -292,3 +292,10 @@ seconds = 3.716
 
 //  Branchless - Sorted
 seconds = 3.71
+
+x64
+//  Branch - Random
+seconds = 11.302
+
+//  Branch - Sorted
+ seconds = 1.830
