@@ -302,3 +302,12 @@ seconds = 11.302
 
 //  Branchless - Random
 seconds = 2.736
+
+//  Branchless - Sorted
+seconds = 2.737
+
+The result is robust in multiple tests. We get a great speedup when the branch result is unpredictable, but we suffer a little bit when it is predictable. In fact, when using a conditional move, the performance is the same regardless of the data pattern.
+Now let's look more closely by investigating the x86 assembly they generate. For simplicity, we use two functions max1 and max2.
+max1 uses the conditional branch if... else ...:
+int max1(int a, int b) {
+	if (a > b)
