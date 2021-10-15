@@ -311,3 +311,7 @@ Now let's look more closely by investigating the x86 assembly they generate. For
 max1 uses the conditional branch if... else ...:
 int max1(int a, int b) {
 	if (a > b)
+		return a;
+	else
+		return b;
+}
