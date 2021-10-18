@@ -315,3 +315,6 @@ int max1(int a, int b) {
 	else
 		return b;
 }
+
+max2 uses the ternary operator ... ? ... : ...:
+int max2(int a, int b) {
