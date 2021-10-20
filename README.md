@@ -318,3 +318,7 @@ int max1(int a, int b) {
 
 max2 uses the ternary operator ... ? ... : ...:
 int max2(int a, int b) {
+	return a > b ? a : b;
+}
+
+On a x86-64 machine, GCC -S generates the assembly below.
