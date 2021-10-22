@@ -326,3 +326,7 @@ On a x86-64 machine, GCC -S generates the assembly below.
 	movl    %edi, -4(%rbp)
 	movl    %esi, -8(%rbp)
 	movl    -4(%rbp), %eax
+	cmpl    -8(%rbp), %eax
+	jle     .L2
+	movl    -4(%rbp), %eax
+	movl    %eax, -12(%rbp)
