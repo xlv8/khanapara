@@ -336,3 +336,8 @@ On a x86-64 machine, GCC -S generates the assembly below.
 	movl    %eax, -12(%rbp)
 .L4:
 	movl    -12(%rbp), %eax
+	leave
+	ret
+
+:max2
+	movl    %edi, -4(%rbp)
