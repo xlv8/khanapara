@@ -330,3 +330,9 @@ On a x86-64 machine, GCC -S generates the assembly below.
 	jle     .L2
 	movl    -4(%rbp), %eax
 	movl    %eax, -12(%rbp)
+	jmp     .L4
+.L2:
+	movl    -8(%rbp), %eax
+	movl    %eax, -12(%rbp)
+.L4:
+	movl    -12(%rbp), %eax
