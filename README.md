@@ -344,3 +344,9 @@ On a x86-64 machine, GCC -S generates the assembly below.
 	movl    %esi, -8(%rbp)
 	movl    -4(%rbp), %eax
 	cmpl    %eax, -8(%rbp)
+	cmovge  -8(%rbp), %eax
+	leave
+	ret
+
+max2 uses much less code due to the usage of instruction cmovge. But the real gain is that max2 does not involve branch jumps, jmp, which would have a significant performance penalty if the predicted result is not right.
+So why does a conditional move perform better?
