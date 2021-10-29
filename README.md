@@ -350,3 +350,5 @@ On a x86-64 machine, GCC -S generates the assembly below.
 
 max2 uses much less code due to the usage of instruction cmovge. But the real gain is that max2 does not involve branch jumps, jmp, which would have a significant performance penalty if the predicted result is not right.
 So why does a conditional move perform better?
+In a typical x86 processor, the execution of an instruction is divided into several stages. Roughly, we have different hardware to deal with different stages. So we do not have to wait for one instruction to finish to start a new one. This is called pipelining.
+In a branch case, the following instruction is determined by the preceding one, so we cannot do pipelining. We have to either wait or predict.
