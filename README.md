@@ -358,3 +358,6 @@ Sometimes, some modern compilers can optimize our code to assembly with better p
 
 ------------------------------
 What is the “-->” operator in C++?
+<div class="post-text" itemprop="text">
+<p>After reading <a href="http://groups.google.com/group/comp.lang.c++.moderated/msg/33f173780d58dd20" rel="noreferrer">Hidden Features and Dark Corners of C++/STL</a> on <code>comp.lang.c++.moderated</code>, I was completely surprised that the following snippet compiled and worked in both Visual Studio 2008 and G++ 4.4.</p>
+<p>Here's the code:</p>
