@@ -363,3 +363,9 @@ What is the “-->” operator in C++?
 <p>Here's the code:</p>
 <pre><code>#include &lt;stdio.h&gt;
 int main()
+{
+	int x = 10;
+	while (x --&gt; 0) // x goes to 0
+	{
+		printf("%d ", x);
+	}
