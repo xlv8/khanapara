@@ -369,3 +369,5 @@ int main()
 	{
 		printf("%d ", x);
 	}
+}
+</code></pre>
