@@ -371,3 +371,5 @@ int main()
 	}
 }
 </code></pre>
+<p>I'd assume this is C, since it works in GCC as well. Where is this defined in the standard, and where has it come from?</p>
+</div>
