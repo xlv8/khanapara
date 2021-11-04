@@ -389,3 +389,8 @@ while( (x--) > 0 )
 What is the “-->” operator in C++?
 
 Or for something completely different... x slides to 0
+while (x --\
+			\
+			 \
+			  \
+			   > 0)
