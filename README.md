@@ -402,3 +402,9 @@ Not so mathematical, but... every picture paints a thousand words...
 What is the “-->” operator in C++?
 
 That's a very complicated operator, so even ISO/IEC JTC1 (Joint Technical Committee 1) placed its description in two different parts of the C++ Standard.
+Joking aside, they are two different operators: -- and > described respectively in §5.2.6/2 and §5.9 of the C++03 Standard.
+
+------------------------------
+The Definitive C++ Book Guide and List
+<div class="post-text" itemprop="text">
+<p>This question attempts to collect the few pearls among the dozens of bad C++ books that are published every year.</p>
