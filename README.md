@@ -384,3 +384,8 @@ The conditional's code decrements x, while returning x's original (not decrement
 To better understand, the statement could be written as follows:
 while( (x--) > 0 )
 
+
+===>
+What is the “-->” operator in C++?
+
+Or for something completely different... x slides to 0
