@@ -408,3 +408,11 @@ Joking aside, they are two different operators: -- and > described respectively 
 The Definitive C++ Book Guide and List
 <div class="post-text" itemprop="text">
 <p>This question attempts to collect the few pearls among the dozens of bad C++ books that are published every year.</p>
+<p>Unlike many other programming languages, which are often picked up on the go from tutorials found on the Internet, few are able to quickly pick up C++ without studying a well-written C++ book. It is way too big and complex for doing this. In fact, it is so big and complex, that <strong><em>there are very many very bad C++ books</em></strong> out there. And we are not talking about bad style, but things like sporting <em>glaringly obvious factual errors</em> and <em>promoting abysmally bad programming styles</em>.</p>
+<p>Please edit the accepted answer to provide <strong>quality books</strong> and an approximate skill level — <em>preferably</em> <strong>after</strong> <em>discussing your addition in <a href="http://chat.stackoverflow.com/rooms/10/loungec">the C++ chat room</a></em>. (The regulars might mercilessly undo your work if they disagree with a recommendation.) Add a short blurb/description about each book that you have personally read/benefited from. Feel free to debate quality, headings, etc. Books that meet the criteria will be added to the list.  Books that have reviews by the Association of C and C++ Users (ACCU) have links to the review. </p>
+<p><sub>*Note: FAQs and other resources can be found in the <a href="https://stackoverflow.com/tags/c%2b%2b/info">C++ tag info</a> and under <a class="post-tag" href="/questions/tagged/c%2b%2b-faq" rel="tag" title="show questions tagged 'c++-faq'">c++-faq</a>. </sub></p>
+</div>
+List of answers:
+
+
+===>
