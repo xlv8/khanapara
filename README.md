@@ -394,3 +394,11 @@ while (x --\
 			 \
 			  \
 			   > 0)
+	 printf("%d ", x);
+
+Not so mathematical, but... every picture paints a thousand words...
+
+===>
+What is the “-->” operator in C++?
+
+That's a very complicated operator, so even ISO/IEC JTC1 (Joint Technical Committee 1) placed its description in two different parts of the C++ Standard.
