@@ -426,3 +426,7 @@ Programming: Principles and Practice Using C++ (Bjarne Stroustrup, 2nd Edition -
 
 
 * Not to be confused with C++ Primer Plus (Stephen Prata), with a significantly less favorable review.
+
+Introductory, with previous programming experience
+
+A Tour of C++ (Bjarne Stroustrup) (2nd edition  for C++17) The “tour” is a quick (about 180 pages and 14 chapters) tutorial overview of all of standard C++ (language and standard library, and using C++11) at a moderately high level for people who already know C++ or at least are experienced programmers. This book is an extended version of the material that constitutes Chapters 2-5 of The C++ Programming Language, 4th edition.
