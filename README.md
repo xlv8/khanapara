@@ -502,3 +502,6 @@ What are the differences between a pointer variable and a reference variable in 
 <p>But what are the differences?</p>
 <hr/>
 <p>Summary from answers and links below:</p>
+<ol>
+<li>A pointer can be re-assigned any number of times while a reference cannot be re-assigned after binding.</li>
+<li>Pointers can point nowhere (<code>NULL</code>), whereas a reference always refers to an object.</li>
