@@ -493,3 +493,6 @@ The code is still available here: http://www.informit.com/store/scientific-and-e
 Unfortunately, the books have become somewhat outdated in the style and C++ features, however, it was an incredible tour-de-force at the time (1994, pre-STL).
 The chapters on dynamics inheritance are a bit complicated to understand and not very useful.
 An updated version of this classic book that includes move semantics and the lessons learned from the STL would be very nice.
+
+
+------------------------------
