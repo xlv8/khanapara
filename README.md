@@ -487,3 +487,5 @@ The Annotated C++ Reference Manual (Bjarne Stroustrup, Margaret A. Ellis) This b
 Thinking in C++ (Bruce Eckel, 2nd Edition, 2000).  Two volumes; is a tutorial style free set of intro level books. Downloads: vol 1, vol 2. Unfortunately they’re marred by a number of trivial errors (e.g. maintaining that temporaries are automatically const), with no official errata list. A partial 3rd party errata list is available at (http://www.computersciencelab.com/Eckel.htm), but it’s apparently not maintained.
 Scientific and Engineering C++: An Introduction to Advanced Techniques and Examples (John Barton and Lee Nackman)
 It is a comprehensive and very detailed book that tried to explain and make use of all the features available in C++, in the context of numerical methods. It introduced at the time several new techniques, such as the Curiously Recurring Template Pattern (CRTP, also called Barton-Nackman trick).
+It pioneered several techniques such as dimensional analysis and automatic differentiation.
+It came with a lot of compilable and useful code, ranging from an expression parser to a Lapack wrapper.
