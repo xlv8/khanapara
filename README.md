@@ -477,3 +477,6 @@ cppreference.com (C++03/11/14/17/…) (initiated by Nate Kohl) is a wiki that su
 
 Classics / Older
 Note: Some information contained within these books may not be up-to-date or no longer considered best practice.
+
+The Design and Evolution of C++ (Bjarne Stroustrup)  If you want to know why the language is the way it is, this book is where you find answers. This covers everything before the standardization of C++.
+Ruminations on C++ - (Andrew Koenig and Barbara Moo) [Review]
