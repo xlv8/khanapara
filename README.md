@@ -499,3 +499,6 @@ An updated version of this classic book that includes move semantics and the les
 What are the differences between a pointer variable and a reference variable in C++?
 <div class="post-text" itemprop="text">
 <p>I know references are syntactic sugar, so code is easier to read and write.</p>
+<p>But what are the differences?</p>
+<hr/>
+<p>Summary from answers and links below:</p>
