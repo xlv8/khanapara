@@ -489,3 +489,7 @@ Scientific and Engineering C++: An Introduction to Advanced Techniques and Examp
 It is a comprehensive and very detailed book that tried to explain and make use of all the features available in C++, in the context of numerical methods. It introduced at the time several new techniques, such as the Curiously Recurring Template Pattern (CRTP, also called Barton-Nackman trick).
 It pioneered several techniques such as dimensional analysis and automatic differentiation.
 It came with a lot of compilable and useful code, ranging from an expression parser to a Lapack wrapper.
+The code is still available here: http://www.informit.com/store/scientific-and-engineering-c-plus-plus-an-introduction-9780201533934.
+Unfortunately, the books have become somewhat outdated in the style and C++ features, however, it was an incredible tour-de-force at the time (1994, pre-STL).
+The chapters on dynamics inheritance are a bit complicated to understand and not very useful.
+An updated version of this classic book that includes move semantics and the lessons learned from the STL would be very nice.
