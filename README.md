@@ -505,3 +505,8 @@ What are the differences between a pointer variable and a reference variable in 
 <ol>
 <li>A pointer can be re-assigned any number of times while a reference cannot be re-assigned after binding.</li>
 <li>Pointers can point nowhere (<code>NULL</code>), whereas a reference always refers to an object.</li>
+<li>You can't take the address of a reference like you can with pointers.</li>
+<li>There's no "reference arithmetic" (but you can take the address of an object pointed by a reference and do pointer arithmetic on it as in <code>&amp;obj + 5</code>).</li>
+</ol>
+<p>To clarify a misconception:</p>
+<blockquote>
