@@ -522,3 +522,5 @@ What are the differences between a pointer variable and a reference variable in 
 <p><strong><em>So, a pointer and a reference both use the same amount of memory.</em></strong></p>
 <p>As a general rule,</p>
 <ul>
+<li>Use references in function parameters and return types to provide useful and self-documenting interfaces.</li>
+<li>Use pointers for implementing algorithms and data structures.</li>
