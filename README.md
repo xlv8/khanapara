@@ -514,3 +514,8 @@ What are the differences between a pointer variable and a reference variable in 
   implement references, but every C++ compiler implements
   references as pointers. That is, a declaration such as:</em></p>
 <pre><code>int &amp;ri = i;
+</code></pre>
+<p><strong><em>if it's not optimized away entirely</em></strong>, <em>allocates the same amount of storage
+  as a pointer, and places the address
+  of <code>i</code> into that storage.</em></p>
+</blockquote>
