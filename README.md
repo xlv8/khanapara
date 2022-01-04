@@ -519,3 +519,6 @@ What are the differences between a pointer variable and a reference variable in 
   as a pointer, and places the address
   of <code>i</code> into that storage.</em></p>
 </blockquote>
+<p><strong><em>So, a pointer and a reference both use the same amount of memory.</em></strong></p>
+<p>As a general rule,</p>
+<ul>
