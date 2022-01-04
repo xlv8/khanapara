@@ -510,3 +510,7 @@ What are the differences between a pointer variable and a reference variable in 
 </ol>
 <p>To clarify a misconception:</p>
 <blockquote>
+<p><em>The C++ standard is very careful to avoid dictating how a compiler may
+  implement references, but every C++ compiler implements
+  references as pointers. That is, a declaration such as:</em></p>
+<pre><code>int &amp;ri = i;
