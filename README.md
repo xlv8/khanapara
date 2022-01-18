@@ -524,3 +524,6 @@ What are the differences between a pointer variable and a reference variable in 
 <ul>
 <li>Use references in function parameters and return types to provide useful and self-documenting interfaces.</li>
 <li>Use pointers for implementing algorithms and data structures.</li>
+</ul>
+<p>Interesting read:</p>
+<ul>
