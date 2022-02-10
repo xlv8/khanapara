@@ -530,3 +530,8 @@ What are the differences between a pointer variable and a reference variable in 
 <li>My all-time favorite <a href="http://yosefk.com/c++fqa/ref.html" rel="noreferrer">C++ FAQ lite</a>.</li>
 <li><a href="http://www.embedded.com/electronics-blogs/programming-pointers/4023307/References-vs-Pointers" rel="noreferrer">References vs. Pointers</a>.</li>
 <li><a href="http://www.embedded.com/electronics-blogs/programming-pointers/4024641/An-Introduction-to-References" rel="noreferrer">An Introduction to References</a>.</li>
+<li><a href="http://www.embedded.com/electronics-blogs/programming-pointers/4023290/References-and-const" rel="noreferrer">References and const</a>.</li>
+</ul>
+</div>
+List of answers:
+
