@@ -539,3 +539,8 @@ List of answers:
 ===>
 What are the differences between a pointer variable and a reference variable in C++?
 
+
+A pointer can be re-assigned:
+int x = 5;
+int y = 6;
+int *p;
