@@ -545,3 +545,6 @@ int x = 5;
 int y = 6;
 int *p;
 p =  &x;
+p = &y;
+*p = 10;
+assert(x == 5);
