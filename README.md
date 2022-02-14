@@ -544,3 +544,4 @@ A pointer can be re-assigned:
 int x = 5;
 int y = 6;
 int *p;
+p =  &x;
