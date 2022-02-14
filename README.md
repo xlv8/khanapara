@@ -535,3 +535,7 @@ What are the differences between a pointer variable and a reference variable in 
 </div>
 List of answers:
 
+
+===>
+What are the differences between a pointer variable and a reference variable in C++?
+
