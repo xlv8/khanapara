@@ -548,3 +548,9 @@ p =  &x;
 p = &y;
 *p = 10;
 assert(x == 5);
+assert(y == 10);
+
+A reference cannot, and must be assigned at initialization:
+int x = 5;
+int y = 6;
+int &r = x;
