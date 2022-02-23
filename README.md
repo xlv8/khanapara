@@ -563,3 +563,8 @@ int *p2 = &r;
 assert(p == p2);
 
 You can have pointers to pointers to pointers offering extra levels of indirection.  Whereas references only offer one level of indirection.
+int x = 0;
+int y = 0;
+int *p = &x;
+int *q = &y;
+int **pp = &p;
