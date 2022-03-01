@@ -568,3 +568,9 @@ int y = 0;
 int *p = &x;
 int *q = &y;
 int **pp = &p;
+pp = &q;//*pp = q
+**pp = 4;
+assert(y == 4);
+assert(x == 0);
+
+Pointer can be assigned nullptr directly, whereas reference cannot. If you try hard enough, and you know how, you can make the address of a reference nullptr.  Likewise, if you try hard enough you can have a reference to a pointer, and then that reference can contain nullptr.
