@@ -574,3 +574,6 @@ assert(y == 4);
 assert(x == 0);
 
 Pointer can be assigned nullptr directly, whereas reference cannot. If you try hard enough, and you know how, you can make the address of a reference nullptr.  Likewise, if you try hard enough you can have a reference to a pointer, and then that reference can contain nullptr.
+int *p = nullptr;
+int &r = nullptr; <--- compiling error
+int &r = *p;  <--- likely no compiling error, especially if the nullptr is hidden behind a function call, yet it refers to a non-existent int at address 0
