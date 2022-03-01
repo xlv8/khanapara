@@ -577,3 +577,8 @@ Pointer can be assigned nullptr directly, whereas reference cannot. If you try h
 int *p = nullptr;
 int &r = nullptr; <--- compiling error
 int &r = *p;  <--- likely no compiling error, especially if the nullptr is hidden behind a function call, yet it refers to a non-existent int at address 0
+
+Pointers can iterate over an array, you can use ++ to go to the next item that a pointer is pointing to, and + 4 to go to the 5th element.  This is no matter what size the object is that the pointer points to.
+A pointer needs to be dereferenced with * to access the memory location it points to, whereas a reference can be used directly.  A pointer to a class/struct uses -> to access it's members whereas a reference uses a ..
+A pointer is a variable that holds a memory address.  Regardless of how a reference is implemented, a reference has the same memory address as the item it references.
+References cannot be stuffed into an array, whereas pointers can be (Mentioned by user @litb)
