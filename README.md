@@ -587,3 +587,9 @@ const int &x = int(12); //legal C++
 int *y = &int(12); //illegal to dereference a temporary.
 
 This makes const& safer for use in argument lists and so forth.
+
+
+===>
+What are the differences between a pointer variable and a reference variable in C++?
+
+What's a C++ reference (for C programmers)
