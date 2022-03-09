@@ -598,3 +598,9 @@ All references must be initialized with a non-null value or compilation will fai
 C programmers might dislike C++ references as it will no longer be obvious when indirection happens or if an argument gets passed by value or by pointer without looking at function signatures.
 C++ programmers might dislike using pointers as they are considered unsafe - although references aren't really any safer than constant pointers except in the most trivial cases - lack the convenience of automatic indirection and carry a different semantic connotation.
 Consider the following statement from the C++ FAQ:
+
+Even though a reference is often implemented using an address in the
+  underlying assembly language, please do not think of a reference as a
+  funny looking pointer to an object. A reference is the object. It is
+  not a pointer to the object, nor a copy of the object. It is the
+  object.
