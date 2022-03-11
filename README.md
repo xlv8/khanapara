@@ -604,3 +604,6 @@ Even though a reference is often implemented using an address in the
   funny looking pointer to an object. A reference is the object. It is
   not a pointer to the object, nor a copy of the object. It is the
   object.
+
+But if a reference really were the object, how could there be dangling references? In unmanaged languages, it's impossible for references to be any 'safer' than pointers - there generally just isn't a way to reliably alias values across scope boundaries!
+Why I consider C++ references useful
