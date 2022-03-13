@@ -615,3 +615,6 @@ What are the differences between a pointer variable and a reference variable in 
 
 If you want to be really pedantic, there is one thing you can do with a reference that you can't do with a pointer: extend the lifetime of a temporary object. In C++ if you bind a const reference to a temporary object, the lifetime of that object becomes the lifetime of the reference.
 std::string s1 = "123";
+std::string s2 = "456";
+
+std::string s3_copy = s1 + s2;
