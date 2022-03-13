@@ -618,3 +618,9 @@ std::string s1 = "123";
 std::string s2 = "456";
 
 std::string s3_copy = s1 + s2;
+const std::string& s3_reference = s1 + s2;
+
+In this example s3_copy copies the temporary object that is a result of the concatenation. Whereas s3_reference in essence becomes the temporary object. It's really a reference to a temporary object that now has the same lifetime as the reference.
+If you try this without the const it should fail to compile. You cannot bind a non-const reference to a temporary object, nor can you take its address for that matter.
+
+------------------------------
