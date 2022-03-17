@@ -629,3 +629,5 @@ How do I iterate over the words of a string?
 <p>I'm trying to iterate over the words of a string.</p>
 <p>The string can be assumed to be composed of words separated by whitespace.</p>
 <p>Note that I'm not interested in C string functions or that kind of character manipulation/access. Also, please give precedence to elegance over efficiency in your answer.</p>
+<p>The best solution I have right now is:</p>
+<pre><code>#include &lt;iostream&gt;
