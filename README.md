@@ -624,3 +624,8 @@ In this example s3_copy copies the temporary object that is a result of the conc
 If you try this without the const it should fail to compile. You cannot bind a non-const reference to a temporary object, nor can you take its address for that matter.
 
 ------------------------------
+How do I iterate over the words of a string?
+<div class="post-text" itemprop="text">
+<p>I'm trying to iterate over the words of a string.</p>
+<p>The string can be assumed to be composed of words separated by whitespace.</p>
+<p>Note that I'm not interested in C string functions or that kind of character manipulation/access. Also, please give precedence to elegance over efficiency in your answer.</p>
