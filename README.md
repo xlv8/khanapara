@@ -638,3 +638,9 @@ using namespace std;
 
 int main()
 {
+	string s = "Somewhere down the road";
+	istringstream iss(s);
+
+	do
+	{
+		string subs;
