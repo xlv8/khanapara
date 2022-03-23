@@ -631,3 +631,10 @@ How do I iterate over the words of a string?
 <p>Note that I'm not interested in C string functions or that kind of character manipulation/access. Also, please give precedence to elegance over efficiency in your answer.</p>
 <p>The best solution I have right now is:</p>
 <pre><code>#include &lt;iostream&gt;
+#include &lt;sstream&gt;
+#include &lt;string&gt;
+
+using namespace std;
+
+int main()
+{
