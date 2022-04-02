@@ -647,3 +647,8 @@ int main()
 		iss &gt;&gt; subs;
 		cout &lt;&lt; "Substring: " &lt;&lt; subs &lt;&lt; endl;
 	} while (iss);
+}
+</code></pre>
+<p>Is there a more elegant way to do this?</p>
+</div>
+List of answers:
