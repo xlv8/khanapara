@@ -644,3 +644,6 @@ int main()
 	do
 	{
 		string subs;
+		iss &gt;&gt; subs;
+		cout &lt;&lt; "Substring: " &lt;&lt; subs &lt;&lt; endl;
+	} while (iss);
