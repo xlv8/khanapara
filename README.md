@@ -652,3 +652,7 @@ int main()
 <p>Is there a more elegant way to do this?</p>
 </div>
 List of answers:
+
+
+===>
+How do I iterate over the words of a string?
