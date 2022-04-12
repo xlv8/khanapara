@@ -690,3 +690,5 @@ How do I iterate over the words of a string?
 I use this to split string by a delimiter. The first puts the results in a pre-constructed vector, the second returns a new vector.
 #include <string>
 #include <sstream>
+#include <vector>
+#include <iterator>
