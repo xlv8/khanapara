@@ -692,3 +692,12 @@ I use this to split string by a delimiter. The first puts the results in a pre-c
 #include <sstream>
 #include <vector>
 #include <iterator>
+
+template<typename Out>
+void split(const std::string &s, char delim, Out result) {
+	std::stringstream ss(s);
+	std::string item;
+	while (std::getline(ss, item, delim)) {
+		*(result++) = item;
+	}
+}
