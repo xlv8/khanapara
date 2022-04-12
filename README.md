@@ -671,3 +671,6 @@ int main() {
 	copy(istream_iterator<string>(iss),
 		 istream_iterator<string>(),
 		 ostream_iterator<string>(cout, "\n"));
+}
+
+Instead of copying the extracted tokens to an output stream, one could insert them into a container, using the same generic copy algorithm.
