@@ -656,3 +656,10 @@ List of answers:
 
 ===>
 How do I iterate over the words of a string?
+
+For what it's worth, here's another way to extract tokens from an input string, relying only on standard library facilities. It's an example of the power and elegance behind the design of the STL.
+#include <iostream>
+#include <string>
+#include <sstream>
+#include <algorithm>
+#include <iterator>
