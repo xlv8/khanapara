@@ -674,3 +674,10 @@ int main() {
 }
 
 Instead of copying the extracted tokens to an output stream, one could insert them into a container, using the same generic copy algorithm.
+vector<string> tokens;
+copy(istream_iterator<string>(iss),
+	 istream_iterator<string>(),
+	 back_inserter(tokens));
+
+... or create the vector directly:
+vector<string> tokens{istream_iterator<string>{iss},
