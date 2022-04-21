@@ -711,3 +711,7 @@ std::vector<std::string> split(const std::string &s, char delim) {
 
 Note that this solution does not skip empty tokens, so the following will find 4 items, one of which is empty:
 std::vector<std::string> x = split("one:two::three", ':');
+
+
+===>
+How do I iterate over the words of a string?
