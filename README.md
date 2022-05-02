@@ -715,3 +715,6 @@ std::vector<std::string> x = split("one:two::three", ':');
 
 ===>
 How do I iterate over the words of a string?
+
+A possible solution using Boost might be:
+#include <boost/algorithm/string.hpp>
