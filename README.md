@@ -718,3 +718,5 @@ How do I iterate over the words of a string?
 
 A possible solution using Boost might be:
 #include <boost/algorithm/string.hpp>
+std::vector<std::string> strs;
+boost::split(strs, "string to split", boost::is_any_of("\t "));
