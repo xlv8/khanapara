@@ -720,3 +720,8 @@ A possible solution using Boost might be:
 #include <boost/algorithm/string.hpp>
 std::vector<std::string> strs;
 boost::split(strs, "string to split", boost::is_any_of("\t "));
+
+This approach might be even faster than the stringstream approach. And since this is a generic template function it can be used to split other types of strings (wchar, etc. or UTF-8) using all kinds of delimiters.
+See the documentation for details.
+
+------------------------------
