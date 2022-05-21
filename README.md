@@ -725,3 +725,7 @@ This approach might be even faster than the stringstream approach. And since thi
 See the documentation for details.
 
 ------------------------------
+What does the explicit keyword mean?
+<div class="post-text" itemprop="text">
+<p>What does the <code>explicit</code> keyword mean in C++?</p>
+</div>
