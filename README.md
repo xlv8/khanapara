@@ -734,3 +734,9 @@ List of answers:
 
 ===>
 What does the explicit keyword mean?
+
+The compiler is allowed to make one implicit conversion to resolve the parameters to a function. What this means is that the compiler can use constructors callable with a single parameter to convert from one type to another in order to get the right type for a parameter.
+Here's an example class with a constructor that can be used for implicit conversions:
+class Foo
+{
+public:
