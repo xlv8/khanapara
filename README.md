@@ -740,3 +740,7 @@ Here's an example class with a constructor that can be used for implicit convers
 class Foo
 {
 public:
+  // single parameter constructor, can be used as an implicit conversion
+  Foo (int foo) : m_foo (foo)
+  {
+  }
