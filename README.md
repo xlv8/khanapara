@@ -752,3 +752,5 @@ private:
 };
 
 Here's a simple function that takes a Foo object:
+void DoBar (Foo foo)
+{
