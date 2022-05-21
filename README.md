@@ -746,3 +746,9 @@ public:
   }
 
   int GetFoo () { return m_foo; }
+
+private:
+  int m_foo;
+};
+
+Here's a simple function that takes a Foo object:
