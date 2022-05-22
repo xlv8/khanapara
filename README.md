@@ -772,3 +772,7 @@ You have a MyString(int size) class with a constructor that constructs a string 
 
 
 ===>
+What does the explicit keyword mean?
+
+Suppose, you have a class String:
+class String {
