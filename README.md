@@ -756,3 +756,11 @@ void DoBar (Foo foo)
 {
   int i = foo.GetFoo ();
 }
+
+and here's where the DoBar function is called.
+int main ()
+{
+  DoBar (42);
+}
+
+The argument is not a Foo object, but an int. However, there exists a constructor for Foo that takes an int so this constructor can be used to convert the parameter to the correct type.
