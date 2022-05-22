@@ -789,3 +789,5 @@ class String {
 public:
 	explicit String (int n); //allocate n bytes
 	String(const char *p); // initialize sobject with string p
+};
+
