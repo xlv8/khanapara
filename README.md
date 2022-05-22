@@ -767,3 +767,8 @@ The argument is not a Foo object, but an int. However, there exists a constructo
 The compiler is allowed to do this once for each parameter.
 Prefixing the explicit keyword to the constructor prevents the compiler from using that constructor for implicit conversions. Adding it to the above class will create a compiler error at the function call DoBar (42).  It is now necessary to call for conversion explicitly with  DoBar (Foo (42))
 The reason you might want to do this is to avoid accidental construction that can hide bugs.  Contrived example:
+
+You have a MyString(int size) class with a constructor that constructs a string of the given size.  You have a function print(const MyString&), and you call print(3) (when you actually intended to call print("3")).  You expect it to print "3", but it prints an empty string of length 3 instead.
+
+
+===>
