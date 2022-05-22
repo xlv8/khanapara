@@ -776,3 +776,7 @@ What does the explicit keyword mean?
 
 Suppose, you have a class String:
 class String {
+public:
+	String(int n); // allocate n bytes to the String object
+	String(const char *p); // initializes object with char *p
+};
