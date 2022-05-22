@@ -791,3 +791,5 @@ public:
 	String(const char *p); // initialize sobject with string p
 };
 
+
+===>
