@@ -793,3 +793,7 @@ public:
 
 
 ===>
+What does the explicit keyword mean?
+
+In C++, a constructor with only one required parameter is considered an implicit conversion function.  It converts the parameter type to the class type.  Whether this is a good thing or not depends on the semantics of the constructor.
+For example, if you have a string class with constructor String(const char* s), that's probably exactly what you want.  You can pass a const char* to a function expecting a String, and the compiler will automatically construct a temporary String object for you.
