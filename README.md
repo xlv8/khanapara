@@ -803,3 +803,6 @@ class Buffer { explicit Buffer(int size); ... }
 That way,
 void useBuffer(Buffer& buf);
 useBuffer(4);
+
+becomes a compile-time error.  If you want to pass a temporary Buffer object, you have to do so explicitly:
+useBuffer(Buffer(4));
