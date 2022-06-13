@@ -798,3 +798,8 @@ What does the explicit keyword mean?
 In C++, a constructor with only one required parameter is considered an implicit conversion function.  It converts the parameter type to the class type.  Whether this is a good thing or not depends on the semantics of the constructor.
 For example, if you have a string class with constructor String(const char* s), that's probably exactly what you want.  You can pass a const char* to a function expecting a String, and the compiler will automatically construct a temporary String object for you.
 On the other hand, if you have a buffer class whose constructor Buffer(int size) takes the size of the buffer in bytes, you probably don't want the compiler to quietly turn ints into Buffers.  To prevent that, you declare the constructor with the explicit keyword:
+class Buffer { explicit Buffer(int size); ... }
+
+That way,
+void useBuffer(Buffer& buf);
+useBuffer(4);
