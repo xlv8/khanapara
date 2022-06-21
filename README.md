@@ -808,3 +808,9 @@ becomes a compile-time error.  If you want to pass a temporary Buffer object, yo
 useBuffer(Buffer(4));
 
 In summary, if your single-parameter constructor converts the parameter into an object of your class, you probably don't want to use the explicit keyword.  But if you have a constructor that simply happens to take a single parameter, you should declare it as explicit to prevent the compiler from surprising you with unexpected conversions.
+
+------------------------------
+Why is “using namespace std;” considered bad practice?
+<div class="post-text" itemprop="text">
+<p>I've been told by others that writing <code>using namespace std;</code> in code is wrong, and that I should use <code>std::cout</code> and <code>std::cin</code> directly instead.</p>
+<p>Why is <code>using namespace std;</code> considered a bad practice? Is it inefficient or does it risk declaring ambiguous variables (variables that share the same name as a function in <code>std</code> namespace)? Does it impact performance?</p>
