@@ -806,3 +806,5 @@ useBuffer(4);
 
 becomes a compile-time error.  If you want to pass a temporary Buffer object, you have to do so explicitly:
 useBuffer(Buffer(4));
+
+In summary, if your single-parameter constructor converts the parameter into an object of your class, you probably don't want to use the explicit keyword.  But if you have a constructor that simply happens to take a single parameter, you should declare it as explicit to prevent the compiler from surprising you with unexpected conversions.
