@@ -815,3 +815,8 @@ Why is “using namespace std;” considered bad practice?
 <p>I've been told by others that writing <code>using namespace std;</code> in code is wrong, and that I should use <code>std::cout</code> and <code>std::cin</code> directly instead.</p>
 <p>Why is <code>using namespace std;</code> considered a bad practice? Is it inefficient or does it risk declaring ambiguous variables (variables that share the same name as a function in <code>std</code> namespace)? Does it impact performance?</p>
 </div>
+List of answers:
+
+
+===>
+Why is “using namespace std;” considered bad practice?
