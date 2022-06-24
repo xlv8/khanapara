@@ -834,3 +834,5 @@ Why is “using namespace std;” considered bad practice?
 I agree with everything Greg wrote, but I'd like to add: It can even get worse than Greg said!
 Library Foo 2.0 could introduce a function, Quux(), that is an unambiguously better match for some of your calls to Quux() than the bar::Quux() your code called for years. Then your code still compiles, but it silently calls the wrong function and does god-knows-what. That's about as bad as things can get.
 Keep in mind that the std namespace has tons of identifiers, many of which are very common ones (think list, sort, string, iterator, etc.) which are very likely to appear in other code, too.
+If you consider this unlikely: There was a question asked here on Stack Overflow where pretty much exactly this happened (wrong function called due to omitted std:: prefix) about half a year after I gave this answer. Here is another, more recent example of such a question.
+So this is a real problem.
