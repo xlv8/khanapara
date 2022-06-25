@@ -839,3 +839,7 @@ So this is a real problem.
 
 Here's one more data point: Many, many years ago, I also used to find it annoying having to prefix everything from the standard library with std::. Then I worked in a project where it was decided at the start that both using directives and declarations are banned except for function scopes. Guess what? It took most of us very few weeks to get used to writing the prefix, and after a few more weeks most of us even agreed that it actually made the code more readable. There's a reason for that: Whether you like shorter or longer prose is subjective, but the prefixes objectively add clarity to the code. Not only the compiler, but you, too, find it easier to see which identifier is referred to.
 In a decade, that project grew to have several million lines of code. Since these discussions come up again and again, I once was curious how often the (allowed) function-scope using actually was used in the project. I grep'd the sources for it and only found one or two dozen places where it was used. To me this indicates that, once tried, developers don't find std:: painful enough to employ using directives even once every 100 kLoC even where it was allowed to be used.
+
+Bottom line: Explicitly prefixing everything doesn't do any harm, takes very little getting used to, and has objective advantages. In particular, it makes the code easier to interpret by the compiler and by human readers — and that should probably be the main goal when writing code.
+
+===>
