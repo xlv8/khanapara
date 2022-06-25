@@ -847,3 +847,7 @@ Why is “using namespace std;” considered bad practice?
 
 The problem with putting using namespace in the header files of your classes is that it forces anyone who wants to use your classes (by including your header files) to also be 'using' (i.e. seeing everything in) those other namespaces.
 However, you may feel free to put a using statement in your (private) *.cpp files.
+
+Beware that some people disagree with my saying "feel free" like this -- because although a using statement in a cpp file is better than in a header (because it doesn't affect people who include your header file), they think it's still not good (because depending on the code it could make the implementation of the class more difficult to maintain). This FAQ topic says,
+
+The using-directive exists for legacy C++ code and to ease the transition to namespaces, but you probably shouldn’t use it on a regular basis, at least not in your new C++ code.
