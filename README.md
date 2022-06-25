@@ -843,3 +843,7 @@ In a decade, that project grew to have several million lines of code. Since thes
 Bottom line: Explicitly prefixing everything doesn't do any harm, takes very little getting used to, and has objective advantages. In particular, it makes the code easier to interpret by the compiler and by human readers — and that should probably be the main goal when writing code.
 
 ===>
+Why is “using namespace std;” considered bad practice?
+
+The problem with putting using namespace in the header files of your classes is that it forces anyone who wants to use your classes (by including your header files) to also be 'using' (i.e. seeing everything in) those other namespaces.
+However, you may feel free to put a using statement in your (private) *.cpp files.
