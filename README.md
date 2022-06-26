@@ -859,3 +859,12 @@ using std::cout; // a using-declaration lets you use cout without qualification
 cout << "Values:";
 
 Just typing std::
+std::cout << "Values:";
+
+
+
+------------------------------
+How do you set, clear, and toggle a single bit?
+<div class="post-text" itemprop="text">
+<p>How do you set, clear, and toggle a bit in C/C++?</p>
+</div>
