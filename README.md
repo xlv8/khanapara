@@ -855,3 +855,7 @@ The using-directive exists for legacy C++ code and to ease the transition to nam
 The FAQ suggests two alternatives:
 
 A using-declaration:
+using std::cout; // a using-declaration lets you use cout without qualification
+cout << "Values:";
+
+Just typing std::
