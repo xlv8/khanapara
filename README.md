@@ -879,3 +879,6 @@ Use the bitwise OR operator (|) to set a bit.
 number |= 1UL << n;
 
 That will set the nth bit of number. n should be zero, if you want to set the 1st bit and so on upto n-1, if you want to set the nth bit.
+Use 1ULL if number is wider than unsigned long; promotion of 1UL << n doesn't happen until after evaluating 1UL << n where it's undefined behaviour to shift by more than the width of a long.  The same applies to all the rest of the examples.
+Clearing a bit
+Use the bitwise AND operator (&) to clear a bit.
