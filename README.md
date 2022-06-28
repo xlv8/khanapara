@@ -870,3 +870,12 @@ How do you set, clear, and toggle a single bit?
 </div>
 List of answers:
 
+
+===>
+How do you set, clear, and toggle a single bit?
+
+Setting a bit
+Use the bitwise OR operator (|) to set a bit.
+number |= 1UL << n;
+
+That will set the nth bit of number. n should be zero, if you want to set the 1st bit and so on upto n-1, if you want to set the nth bit.
