@@ -892,3 +892,5 @@ number ^= 1UL << n;
 That will toggle the nth bit of number.
 Checking a bit
 You didn't ask for this, but I might as well add it.
+To check a bit, shift the number n to the right, then bitwise AND it:
+bit = (number >> n) & 1U;
