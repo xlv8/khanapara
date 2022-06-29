@@ -882,3 +882,8 @@ That will set the nth bit of number. n should be zero, if you want to set the 1s
 Use 1ULL if number is wider than unsigned long; promotion of 1UL << n doesn't happen until after evaluating 1UL << n where it's undefined behaviour to shift by more than the width of a long.  The same applies to all the rest of the examples.
 Clearing a bit
 Use the bitwise AND operator (&) to clear a bit.
+number &= ~(1UL << n);
+
+That will clear the nth bit of number. You must invert the bit string with the bitwise NOT operator (~), then AND it.
+Toggling a bit
+The XOR operator (^) can be used to toggle a bit.
