@@ -887,3 +887,8 @@ number &= ~(1UL << n);
 That will clear the nth bit of number. You must invert the bit string with the bitwise NOT operator (~), then AND it.
 Toggling a bit
 The XOR operator (^) can be used to toggle a bit.
+number ^= 1UL << n;
+
+That will toggle the nth bit of number.
+Checking a bit
+You didn't ask for this, but I might as well add it.
