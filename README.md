@@ -894,3 +894,8 @@ Checking a bit
 You didn't ask for this, but I might as well add it.
 To check a bit, shift the number n to the right, then bitwise AND it:
 bit = (number >> n) & 1U;
+
+That will put the value of the nth bit of number into the variable bit.
+Changing the nth bit to x
+Setting the nth bit to either 1 or 0 can be achieved with the following on a 2's complement C++ implementation:
+number ^= (-x ^ number) & (1UL << n);
