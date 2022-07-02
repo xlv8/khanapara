@@ -899,3 +899,11 @@ That will put the value of the nth bit of number into the variable bit.
 Changing the nth bit to x
 Setting the nth bit to either 1 or 0 can be achieved with the following on a 2's complement C++ implementation:
 number ^= (-x ^ number) & (1UL << n);
+
+Bit n will be set if x is 1, and cleared if x is 0.  If x has some other value, you get garbage.  x = !!x will booleanize it to 0 or 1.
+To make this independent of 2's complement negation behaviour (where -1 has all bits set, unlike on a 1's complement or sign/magnitude C++ implementation), use unsigned negation.
+number ^= (-(unsigned long)x ^ number) & (1UL << n);
+
+or
+unsigned long newbit = !!x;    // Also booleanize to force 0 or 1
+number ^= (-newbit ^ number) & (1UL << n);
