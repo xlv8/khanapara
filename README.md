@@ -913,3 +913,7 @@ or
 number = (number & ~(1UL << n)) | (x << n);
 
 (number & ~(1UL << n)) will clear the nth bit and (x << n) will set the nth bit to x.
+It's also generally a good idea to not to copy/paste code in general and so many people use preprocessor macros (like the community wiki answer further down) or some sort of encapsulation.
+
+===>
+How do you set, clear, and toggle a single bit?
