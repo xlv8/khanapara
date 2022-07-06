@@ -907,3 +907,9 @@ number ^= (-(unsigned long)x ^ number) & (1UL << n);
 or
 unsigned long newbit = !!x;    // Also booleanize to force 0 or 1
 number ^= (-newbit ^ number) & (1UL << n);
+
+It's generally a good idea to use unsigned types for portable bit manipulation.
+or
+number = (number & ~(1UL << n)) | (x << n);
+
+(number & ~(1UL << n)) will clear the nth bit and (x << n) will set the nth bit to x.
