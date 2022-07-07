@@ -925,3 +925,5 @@ There is no need to roll your own:
 #include <iostream>
 
 int main()
+{
+	std::bitset<5> x;
