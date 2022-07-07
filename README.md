@@ -917,3 +917,11 @@ It's also generally a good idea to not to copy/paste code in general and so many
 
 ===>
 How do you set, clear, and toggle a single bit?
+
+Using the Standard C++ Library: std::bitset<N>.
+Or the Boost version: boost::dynamic_bitset.
+There is no need to roll your own:
+#include <bitset>
+#include <iostream>
+
+int main()
