@@ -937,3 +937,4 @@ int main()
 
 
 [Alpha:] > ./a.out
+00010
