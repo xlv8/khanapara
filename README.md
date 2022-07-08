@@ -927,3 +927,6 @@ There is no need to roll your own:
 int main()
 {
 	std::bitset<5> x;
+
+	x[1] = 1;
+	x[2] = 0;
