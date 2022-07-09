@@ -938,3 +938,8 @@ int main()
 
 [Alpha:] > ./a.out
 00010
+
+The Boost version allows a runtime sized bitset compared with a standard library compile-time sized bitset.
+
+===>
+How do you set, clear, and toggle a single bit?
