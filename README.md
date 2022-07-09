@@ -948,3 +948,10 @@ The other option is to use bit fields:
 struct bits {
 	unsigned int a:1;
 	unsigned int b:1;
+	unsigned int c:1;
+};
+
+struct bits mybits;
+
+defines a 3-bit field (actually, it's three 1-bit felds). Bit operations now become a bit (haha) simpler:
+To set or clear a bit:
