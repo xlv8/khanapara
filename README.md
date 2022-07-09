@@ -943,3 +943,8 @@ The Boost version allows a runtime sized bitset compared with a standard library
 
 ===>
 How do you set, clear, and toggle a single bit?
+
+The other option is to use bit fields:
+struct bits {
+	unsigned int a:1;
+	unsigned int b:1;
