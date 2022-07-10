@@ -959,3 +959,8 @@ mybits.b = 1;
 mybits.c = 0;
 
 To toggle a bit:
+mybits.a = !mybits.a;
+mybits.b = ~mybits.b;
+mybits.c ^= 1;  /* all work */
+
+Checking a bit:
