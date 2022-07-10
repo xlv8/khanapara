@@ -957,3 +957,5 @@ defines a 3-bit field (actually, it's three 1-bit felds). Bit operations now bec
 To set or clear a bit:
 mybits.b = 1;
 mybits.c = 0;
+
+To toggle a bit:
