@@ -964,3 +964,6 @@ mybits.b = ~mybits.b;
 mybits.c ^= 1;  /* all work */
 
 Checking a bit:
+if (mybits.c)  //if mybits.c is non zero the next line below will execute
+
+This only works with fixed-size bit fields. Otherwise you have to resort to the bit-twiddling techniques described in previous posts.
