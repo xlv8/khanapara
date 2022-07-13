@@ -967,3 +967,9 @@ Checking a bit:
 if (mybits.c)  //if mybits.c is non zero the next line below will execute
 
 This only works with fixed-size bit fields. Otherwise you have to resort to the bit-twiddling techniques described in previous posts.
+
+------------------------------
+When should static_cast, dynamic_cast, const_cast and reinterpret_cast be used?
+<div class="post-text" itemprop="text">
+<p>What are the proper uses of:</p>
+<ul>
