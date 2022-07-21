@@ -976,3 +976,9 @@ When should static_cast, dynamic_cast, const_cast and reinterpret_cast be used?
 <li><code>static_cast</code></li>
 <li><code>dynamic_cast</code></li>
 <li><code>const_cast</code></li>
+<li><code>reinterpret_cast</code></li>
+<li>C-style cast <code>(type)value</code></li>
+<li>Function-style cast <code>type(value)</code></li>
+</ul>
+<p>How does one decide which to use in which specific cases?</p>
+</div>
