@@ -973,3 +973,6 @@ When should static_cast, dynamic_cast, const_cast and reinterpret_cast be used?
 <div class="post-text" itemprop="text">
 <p>What are the proper uses of:</p>
 <ul>
+<li><code>static_cast</code></li>
+<li><code>dynamic_cast</code></li>
+<li><code>const_cast</code></li>
