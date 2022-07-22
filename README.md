@@ -982,3 +982,5 @@ When should static_cast, dynamic_cast, const_cast and reinterpret_cast be used?
 </ul>
 <p>How does one decide which to use in which specific cases?</p>
 </div>
+List of answers:
+
