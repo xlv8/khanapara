@@ -1003,3 +1003,8 @@ C-style cast and function-style cast are casts using (type)object or type(object
 
 const_cast
 static_cast (though ignoring access restrictions)
+static_cast (see above), then const_cast
+reinterpret_cast
+reinterpret_cast, then const_cast
+
+It can therefore be used as a replacement for other casts in some instances, but can be extremely dangerous because of the ability to devolve into a reinterpret_cast, and the latter should be preferred when explicit casting is needed, unless you are sure static_cast will succeed or reinterpret_cast will fail. Even then, consider the longer, more explicit option.
