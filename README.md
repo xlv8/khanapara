@@ -1014,3 +1014,5 @@ C-style casts also ignore access control when performing a static_cast, which me
 When should static_cast, dynamic_cast, const_cast and reinterpret_cast be used?
 
 Use dynamic_cast for converting pointers/references within an inheritance hierarchy.
+Use static_cast for ordinary type conversions.
+Use reinterpret_cast for low-level reinterpreting of bit patterns.  Use with extreme caution.
