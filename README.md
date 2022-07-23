@@ -1008,3 +1008,9 @@ reinterpret_cast
 reinterpret_cast, then const_cast
 
 It can therefore be used as a replacement for other casts in some instances, but can be extremely dangerous because of the ability to devolve into a reinterpret_cast, and the latter should be preferred when explicit casting is needed, unless you are sure static_cast will succeed or reinterpret_cast will fail. Even then, consider the longer, more explicit option.
+C-style casts also ignore access control when performing a static_cast, which means that they have the ability to perform an operation that no other cast can. This is mostly a kludge, though, and in my mind is just another reason to avoid C-style casts.
+
+===>
+When should static_cast, dynamic_cast, const_cast and reinterpret_cast be used?
+
+Use dynamic_cast for converting pointers/references within an inheritance hierarchy.
