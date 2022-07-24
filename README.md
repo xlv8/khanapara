@@ -1016,3 +1016,9 @@ When should static_cast, dynamic_cast, const_cast and reinterpret_cast be used?
 Use dynamic_cast for converting pointers/references within an inheritance hierarchy.
 Use static_cast for ordinary type conversions.
 Use reinterpret_cast for low-level reinterpreting of bit patterns.  Use with extreme caution.
+Use const_cast for casting away const/volatile.  Avoid this unless you are stuck using a const-incorrect API.
+
+===>
+When should static_cast, dynamic_cast, const_cast and reinterpret_cast be used?
+
+(A lot of theoretical and conceptual explanation has been given above)
