@@ -1022,3 +1022,6 @@ Use const_cast for casting away const/volatile.  Avoid this unless you are stuck
 When should static_cast, dynamic_cast, const_cast and reinterpret_cast be used?
 
 (A lot of theoretical and conceptual explanation has been given above)
+Below are some of the practical examples when I used static_cast, dynamic_cast, const_cast, reinterpret_cast.
+(Also referes this to understand the explaination : http://www.cplusplus.com/doc/tutorial/typecasting/)
+static_cast :
