@@ -1025,3 +1025,7 @@ When should static_cast, dynamic_cast, const_cast and reinterpret_cast be used?
 Below are some of the practical examples when I used static_cast, dynamic_cast, const_cast, reinterpret_cast.
 (Also referes this to understand the explaination : http://www.cplusplus.com/doc/tutorial/typecasting/)
 static_cast :
+OnEventData(void* pData)
+
+{
+  ......
