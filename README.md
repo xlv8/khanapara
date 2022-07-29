@@ -1034,3 +1034,6 @@ OnEventData(void* pData)
 
   //  EventData is a structure e.g.
   //  typedef struct _EventData {
+  //  std::string id;
+  //  std:: string remote_id;
+  //  } EventData;
