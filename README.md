@@ -1029,3 +1029,8 @@ OnEventData(void* pData)
 
 {
   ......
+
+  //  pData is a void* pData,
+
+  //  EventData is a structure e.g.
+  //  typedef struct _EventData {
