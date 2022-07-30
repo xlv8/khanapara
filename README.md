@@ -1051,3 +1051,11 @@ void DebugLog::OnMessage(Message *msg)
 {
 	static DebugMsgData *debug;
 	static XYZMsgData *xyz;
+
+	if(debug = dynamic_cast<DebugMsgData*>(msg->pdata)){
+		// debug message
+	}
+	else if(xyz = dynamic_cast<XYZMsgData*>(msg->pdata)){
+		// xyz message
+	}
+	else/* if( ... )*/{
