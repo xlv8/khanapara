@@ -1040,3 +1040,14 @@ OnEventData(void* pData)
 
   // On Some Situation a void pointer *pData
   // has been static_casted as
+  // EventData* pointer
+
+  EventData *evtdata = static_cast<EventData*>(pData);
+  .....
+}
+
+dynamic_cast :
+void DebugLog::OnMessage(Message *msg)
+{
+	static DebugMsgData *debug;
+	static XYZMsgData *xyz;
