@@ -1037,3 +1037,6 @@ OnEventData(void* pData)
   //  std::string id;
   //  std:: string remote_id;
   //  } EventData;
+
+  // On Some Situation a void pointer *pData
+  // has been static_casted as
