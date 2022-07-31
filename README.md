@@ -1059,3 +1059,4 @@ void DebugLog::OnMessage(Message *msg)
 		// xyz message
 	}
 	else/* if( ... )*/{
+		// ...
