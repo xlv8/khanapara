@@ -1060,3 +1060,7 @@ void DebugLog::OnMessage(Message *msg)
 	}
 	else/* if( ... )*/{
 		// ...
+	}
+}
+
+const_cast :
