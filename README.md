@@ -1064,3 +1064,7 @@ void DebugLog::OnMessage(Message *msg)
 }
 
 const_cast :
+// *Passwd declared as a const
+
+const unsigned char *Passwd
+
