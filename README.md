@@ -1070,3 +1070,10 @@ const unsigned char *Passwd
 
 
 // on some situation it require to remove its constness
+
+const_cast<unsigned char*>(Passwd)
+
+reinterpret_cast :
+typedef unsigned short uint16;
+
+// Read Bytes returns that 2 bytes got read.
