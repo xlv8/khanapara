@@ -1081,3 +1081,7 @@ typedef unsigned short uint16;
 bool ByteBuffer::ReadUInt16(uint16& val) {
   return ReadBytes(reinterpret_cast<char*>(&val), 2);
 }
+
+
+------------------------------
+Why are elementwise additions much faster in separate loops than in a combined loop?
