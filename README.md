@@ -1077,3 +1077,7 @@ reinterpret_cast :
 typedef unsigned short uint16;
 
 // Read Bytes returns that 2 bytes got read.
+
+bool ByteBuffer::ReadUInt16(uint16& val) {
+  return ReadBytes(reinterpret_cast<char*>(&val), 2);
+}
