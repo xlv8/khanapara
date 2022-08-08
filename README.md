@@ -1090,3 +1090,9 @@ Why are elementwise additions much faster in separate loops than in a combined l
 <pre><code>const int n = 100000;
 
 for (int j = 0; j &lt; n; j++) {
+	a1[j] += b1[j];
+	c1[j] += d1[j];
+}
+</code></pre>
+<p>This loop is executed 10,000 times via another outer <code>for</code> loop. To speed it up, I changed the code to:</p>
+<pre><code>for (int j = 0; j &lt; n; j++) {
