@@ -1085,3 +1085,8 @@ bool ByteBuffer::ReadUInt16(uint16& val) {
 
 ------------------------------
 Why are elementwise additions much faster in separate loops than in a combined loop?
+<div class="post-text" itemprop="text">
+<p>Suppose <code>a1</code>, <code>b1</code>, <code>c1</code>, and <code>d1</code> point to heap memory and my numerical code has the following core loop.</p>
+<pre><code>const int n = 100000;
+
+for (int j = 0; j &lt; n; j++) {
