@@ -1096,3 +1096,8 @@ for (int j = 0; j &lt; n; j++) {
 </code></pre>
 <p>This loop is executed 10,000 times via another outer <code>for</code> loop. To speed it up, I changed the code to:</p>
 <pre><code>for (int j = 0; j &lt; n; j++) {
+	a1[j] += b1[j];
+}
+
+for (int j = 0; j &lt; n; j++) {
+	c1[j] += d1[j];
