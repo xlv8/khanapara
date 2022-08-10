@@ -1101,3 +1101,10 @@ for (int j = 0; j &lt; n; j++) {
 
 for (int j = 0; j &lt; n; j++) {
 	c1[j] += d1[j];
+}
+</code></pre>
+<p>Compiled on MS <a href="http://en.wikipedia.org/wiki/Visual_C++#32-bit_versions" rel="noreferrer">Visual C++ 10.0</a> with full optimization and <a href="http://en.wikipedia.org/wiki/SSE2" rel="noreferrer">SSE2</a> enabled for 32-bit on a <a href="http://en.wikipedia.org/wiki/Intel_Core_2" rel="noreferrer">Intel Core 2</a> Duo (x64), the first example takes 5.5 seconds and the double-loop example takes only 1.9 seconds. My question is: (Please refer to the my rephrased question at the bottom)</p>
+<p>PS: I am not sure, if this helps:</p>
+<p>Disassembly for the first loop basically looks like this (this block is repeated about five times in the full program):</p>
+<pre><code>movsd       xmm0,mmword ptr [edx+18h]
+addsd       xmm0,mmword ptr [ecx+20h]
