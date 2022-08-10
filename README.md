@@ -1108,3 +1108,9 @@ for (int j = 0; j &lt; n; j++) {
 <p>Disassembly for the first loop basically looks like this (this block is repeated about five times in the full program):</p>
 <pre><code>movsd       xmm0,mmword ptr [edx+18h]
 addsd       xmm0,mmword ptr [ecx+20h]
+movsd       mmword ptr [ecx+20h],xmm0
+movsd       xmm0,mmword ptr [esi+10h]
+addsd       xmm0,mmword ptr [eax+30h]
+movsd       mmword ptr [eax+30h],xmm0
+movsd       xmm0,mmword ptr [edx+20h]
+addsd       xmm0,mmword ptr [ecx+28h]
