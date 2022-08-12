@@ -1125,3 +1125,11 @@ movsd       xmm0,mmword ptr [ecx+20h]
 addsd       xmm0,mmword ptr [eax+30h]
 movsd       mmword ptr [eax+30h],xmm0
 movsd       xmm0,mmword ptr [ecx+28h]
+addsd       xmm0,mmword ptr [eax+38h]
+movsd       mmword ptr [eax+38h],xmm0
+movsd       xmm0,mmword ptr [ecx+30h]
+addsd       xmm0,mmword ptr [eax+40h]
+movsd       mmword ptr [eax+40h],xmm0
+</code></pre>
+<p>The question turned out to be of no relevance, as the behavior severely depends on the sizes of the arrays (n) and the CPU cache. So if there is further interest, I rephrase the question:</p>
+<p><strong>Could you provide some solid insight into the details that lead to the different cache behaviors as illustrated by the five regions on the following graph?</strong></p>
