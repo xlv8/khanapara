@@ -1114,3 +1114,7 @@ addsd       xmm0,mmword ptr [eax+30h]
 movsd       mmword ptr [eax+30h],xmm0
 movsd       xmm0,mmword ptr [edx+20h]
 addsd       xmm0,mmword ptr [ecx+28h]
+movsd       mmword ptr [ecx+28h],xmm0
+movsd       xmm0,mmword ptr [esi+18h]
+addsd       xmm0,mmword ptr [eax+38h]
+</code></pre>
