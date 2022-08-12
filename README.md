@@ -1118,3 +1118,4 @@ movsd       mmword ptr [ecx+28h],xmm0
 movsd       xmm0,mmword ptr [esi+18h]
 addsd       xmm0,mmword ptr [eax+38h]
 </code></pre>
+<p>Each loop of the double loop example produces this code (the following block is repeated about three times):</p>
