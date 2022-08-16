@@ -1133,3 +1133,7 @@ movsd       mmword ptr [eax+40h],xmm0
 </code></pre>
 <p>The question turned out to be of no relevance, as the behavior severely depends on the sizes of the arrays (n) and the CPU cache. So if there is further interest, I rephrase the question:</p>
 <p><strong>Could you provide some solid insight into the details that lead to the different cache behaviors as illustrated by the five regions on the following graph?</strong></p>
+<p><strong>It might also be interesting to point out the differences between CPU/cache architectures, by providing a similar graph for these CPUs.</strong></p>
+<p>PPS: Here is the full code. It uses <a href="https://www.threadingbuildingblocks.org/" rel="noreferrer">TBB</a> <code>Tick_Count</code> for higher resolution timing, which can be disabled by not defining the <code>TBB_TIMING</code> Macro:</p>
+<pre><code>#include &lt;iostream&gt;
+#include &lt;iomanip&gt;
