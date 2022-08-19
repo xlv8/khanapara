@@ -1145,3 +1145,6 @@ movsd       mmword ptr [eax+40h],xmm0
 #ifdef TBB_TIMING
 #include &lt;tbb/tick_count.h&gt;
 using tbb::tick_count;
+#else
+#include &lt;time.h&gt;
+#endif
