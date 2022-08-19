@@ -1148,3 +1148,9 @@ using tbb::tick_count;
 #else
 #include &lt;time.h&gt;
 #endif
+
+using namespace std;
+
+//#define preallocate_memory new_cont
+
+enum { new_cont, new_sep };
