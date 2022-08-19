@@ -1157,3 +1157,9 @@ enum { new_cont, new_sep };
 
 double *a1, *b1, *c1, *d1;
 
+
+void allo(int cont, int n)
+{
+	switch(cont) {
+	  case new_cont:
+		a1 = new double[n*4];
