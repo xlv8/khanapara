@@ -1154,3 +1154,6 @@ using namespace std;
 //#define preallocate_memory new_cont
 
 enum { new_cont, new_sep };
+
+double *a1, *b1, *c1, *d1;
+
