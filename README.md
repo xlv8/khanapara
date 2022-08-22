@@ -1163,3 +1163,5 @@ void allo(int cont, int n)
 	switch(cont) {
 	  case new_cont:
 		a1 = new double[n*4];
+		b1 = a1 + n;
+		c1 = b1 + n;
