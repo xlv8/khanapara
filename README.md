@@ -1168,3 +1168,7 @@ void allo(int cont, int n)
 		d1 = c1 + n;
 		break;
 	  case new_sep:
+		a1 = new double[n];
+		b1 = new double[n];
+		c1 = new double[n];
+		d1 = new double[n];
