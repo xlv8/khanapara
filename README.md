@@ -1172,3 +1172,7 @@ void allo(int cont, int n)
 		b1 = new double[n];
 		c1 = new double[n];
 		d1 = new double[n];
+		break;
+	}
+
+	for (int i = 0; i &lt; n; i++) {
