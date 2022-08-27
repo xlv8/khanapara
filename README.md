@@ -1176,3 +1176,6 @@ void allo(int cont, int n)
 	}
 
 	for (int i = 0; i &lt; n; i++) {
+		a1[i] = 1.0;
+		d1[i] = 1.0;
+		c1[i] = 1.0;
