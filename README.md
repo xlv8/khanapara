@@ -1182,3 +1182,7 @@ void allo(int cont, int n)
 		b1[i] = 1.0;
 	}
 }
+
+void ff(int cont)
+{
+	switch(cont){
