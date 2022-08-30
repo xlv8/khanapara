@@ -1179,3 +1179,6 @@ void allo(int cont, int n)
 		a1[i] = 1.0;
 		d1[i] = 1.0;
 		c1[i] = 1.0;
+		b1[i] = 1.0;
+	}
+}
