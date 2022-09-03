@@ -1188,3 +1188,8 @@ void ff(int cont)
 	switch(cont){
 	  case new_sep:
 		delete[] b1;
+		delete[] c1;
+		delete[] d1;
+	  case new_cont:
+		delete[] a1;
+	}
