@@ -1197,3 +1197,11 @@ void ff(int cont)
 
 double plain(int n, int m, int cont, int loops)
 {
+#ifndef preallocate_memory
+	allo(cont,n);
+#endif
+
+#ifdef TBB_TIMING
+	tick_count t0 = tick_count::now();
+#else
+	clock_t start = clock();
