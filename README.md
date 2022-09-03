@@ -1193,3 +1193,7 @@ void ff(int cont)
 	  case new_cont:
 		delete[] a1;
 	}
+}
+
+double plain(int n, int m, int cont, int loops)
+{
