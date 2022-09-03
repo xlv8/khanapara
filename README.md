@@ -1186,3 +1186,5 @@ void allo(int cont, int n)
 void ff(int cont)
 {
 	switch(cont){
+	  case new_sep:
+		delete[] b1;
