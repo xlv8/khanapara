@@ -1212,3 +1212,11 @@ double plain(int n, int m, int cont, int loops)
 			for (int j = 0; j &lt; n; j++){
 				a1[j] += b1[j];
 				c1[j] += d1[j];
+			}
+		}
+	} else {
+		for (int i = 0; i &lt; m; i++) {
+			for (int j = 0; j &lt; n; j++) {
+				a1[j] += b1[j];
+			}
+			for (int j = 0; j &lt; n; j++) {
