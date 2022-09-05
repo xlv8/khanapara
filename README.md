@@ -1210,3 +1210,5 @@ double plain(int n, int m, int cont, int loops)
 	if (loops == 1) {
 		for (int i = 0; i &lt; m; i++) {
 			for (int j = 0; j &lt; n; j++){
+				a1[j] += b1[j];
+				c1[j] += d1[j];
