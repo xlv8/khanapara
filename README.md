@@ -1205,3 +1205,8 @@ double plain(int n, int m, int cont, int loops)
 	tick_count t0 = tick_count::now();
 #else
 	clock_t start = clock();
+#endif
+
+	if (loops == 1) {
+		for (int i = 0; i &lt; m; i++) {
+			for (int j = 0; j &lt; n; j++){
