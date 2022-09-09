@@ -1220,3 +1220,8 @@ double plain(int n, int m, int cont, int loops)
 				a1[j] += b1[j];
 			}
 			for (int j = 0; j &lt; n; j++) {
+				c1[j] += d1[j];
+			}
+		}
+	}
+	double ret;
