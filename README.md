@@ -1225,3 +1225,6 @@ double plain(int n, int m, int cont, int loops)
 		}
 	}
 	double ret;
+
+#ifdef TBB_TIMING
+	tick_count t1 = tick_count::now();
