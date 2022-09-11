@@ -1228,3 +1228,8 @@ double plain(int n, int m, int cont, int loops)
 
 #ifdef TBB_TIMING
 	tick_count t1 = tick_count::now();
+	ret = 2.0*double(n)*double(m)/(t1-t0).seconds();
+#else
+	clock_t end = clock();
+	ret = 2.0*double(n)*double(m)/(double)(end - start) *double(CLOCKS_PER_SEC);
+#endif
