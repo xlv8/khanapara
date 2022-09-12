@@ -1233,3 +1233,7 @@ double plain(int n, int m, int cont, int loops)
 	clock_t end = clock();
 	ret = 2.0*double(n)*double(m)/(double)(end - start) *double(CLOCKS_PER_SEC);
 #endif
+
+#ifndef preallocate_memory
+	ff(cont);
+#endif
