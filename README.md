@@ -1243,3 +1243,5 @@ double plain(int n, int m, int cont, int loops)
 
 
 void main()
+{
+	freopen("C:\\test.csv", "w", stdout);
