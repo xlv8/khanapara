@@ -1245,3 +1245,7 @@ double plain(int n, int m, int cont, int loops)
 void main()
 {
 	freopen("C:\\test.csv", "w", stdout);
+
+	char *s = " ";
+
+	string na[2] ={"new_cont", "new_sep"};
