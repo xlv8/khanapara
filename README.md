@@ -1249,3 +1249,11 @@ void main()
 	char *s = " ";
 
 	string na[2] ={"new_cont", "new_sep"};
+
+	cout &lt;&lt; "n";
+
+	for (int j = 0; j &lt; 2; j++)
+		for (int i = 1; i &lt;= 2; i++)
+#ifdef preallocate_memory
+			cout &lt;&lt; s &lt;&lt; i &lt;&lt; "_loops_" &lt;&lt; na[preallocate_memory];
+#else
