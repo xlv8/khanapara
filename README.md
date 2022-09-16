@@ -1257,3 +1257,7 @@ void main()
 #ifdef preallocate_memory
 			cout &lt;&lt; s &lt;&lt; i &lt;&lt; "_loops_" &lt;&lt; na[preallocate_memory];
 #else
+			cout &lt;&lt; s &lt;&lt; i &lt;&lt; "_loops_" &lt;&lt; na[j];
+#endif
+
+	cout &lt;&lt; endl;
