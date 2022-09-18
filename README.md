@@ -1261,3 +1261,13 @@ void main()
 #endif
 
 	cout &lt;&lt; endl;
+
+	long long nmax = 1000000;
+
+#ifdef preallocate_memory
+	allo(preallocate_memory, nmax);
+#endif
+
+	for (long long n = 1L; n &lt; nmax; n = max(n+1, long long(n*1.2)))
+	{
+		const long long m = 10000000/n;
