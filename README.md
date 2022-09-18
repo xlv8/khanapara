@@ -1271,3 +1271,4 @@ void main()
 	for (long long n = 1L; n &lt; nmax; n = max(n+1, long long(n*1.2)))
 	{
 		const long long m = 10000000/n;
+		cout &lt;&lt; n;
