@@ -1276,3 +1276,7 @@ void main()
 		for (int j = 0; j &lt; 2; j++)
 			for (int i = 1; i &lt;= 2; i++)
 				cout &lt;&lt; s &lt;&lt; plain(n, m, j, i);
+		cout &lt;&lt; endl;
+	}
+}
+</code></pre>
