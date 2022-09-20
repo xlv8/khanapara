@@ -1280,3 +1280,8 @@ void main()
 	}
 }
 </code></pre>
+<p>(It shows FLOP/s for different values of <code>n</code>.)</p>
+<p><img alt="enter image description here" src="https://i.stack.imgur.com/keuWU.gif"/></p>
+</div>
+List of answers:
+
