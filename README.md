@@ -1293,3 +1293,5 @@ Upon further analysis of this, I believe this is (at least partially) caused by 
 If I've guessed correctly on how you are allocating your arrays, they are likely to be aligned to the page line.
 This means that all your accesses in each loop will fall on the same cache way. However, Intel processors have had 8-way L1 cache associativity for a while. But in reality, the performance isn't completely uniform. Accessing 4-ways is still slower than say 2-ways.
 EDIT : It does in fact look like you are allocating all the arrays separately.
+Usually when such large allocations are requested, the allocator will request fresh pages from the OS. Therefore, there is a high chance that large allocations will appear at the same offset from a page-boundary.
+Here's the test code:
