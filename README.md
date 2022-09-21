@@ -1285,3 +1285,6 @@ void main()
 </div>
 List of answers:
 
+
+===>
+Why are elementwise additions much faster in separate loops than in a combined loop?
