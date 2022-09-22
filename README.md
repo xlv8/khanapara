@@ -1295,3 +1295,10 @@ This means that all your accesses in each loop will fall on the same cache way. 
 EDIT : It does in fact look like you are allocating all the arrays separately.
 Usually when such large allocations are requested, the allocator will request fresh pages from the OS. Therefore, there is a high chance that large allocations will appear at the same offset from a page-boundary.
 Here's the test code:
+int main(){
+	const int n = 100000;
+
+#ifdef ALLOCATE_SEPERATE
+	double *a1 = (double*)malloc(n * sizeof(double));
+	double *b1 = (double*)malloc(n * sizeof(double));
+	double *c1 = (double*)malloc(n * sizeof(double));
