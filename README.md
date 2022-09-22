@@ -1302,3 +1302,8 @@ int main(){
 	double *a1 = (double*)malloc(n * sizeof(double));
 	double *b1 = (double*)malloc(n * sizeof(double));
 	double *c1 = (double*)malloc(n * sizeof(double));
+	double *d1 = (double*)malloc(n * sizeof(double));
+#else
+	double *a1 = (double*)malloc(n * sizeof(double) * 4);
+	double *b1 = a1 + n;
+	double *c1 = b1 + n;
