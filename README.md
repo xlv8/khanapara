@@ -1307,3 +1307,9 @@ int main(){
 	double *a1 = (double*)malloc(n * sizeof(double) * 4);
 	double *b1 = a1 + n;
 	double *c1 = b1 + n;
+	double *d1 = c1 + n;
+#endif
+
+	//  Zero the data to prevent any chance of denormals.
+	memset(a1,0,n * sizeof(double));
+	memset(b1,0,n * sizeof(double));
