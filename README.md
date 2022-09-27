@@ -1313,3 +1313,5 @@ int main(){
 	//  Zero the data to prevent any chance of denormals.
 	memset(a1,0,n * sizeof(double));
 	memset(b1,0,n * sizeof(double));
+	memset(c1,0,n * sizeof(double));
+	memset(d1,0,n * sizeof(double));
