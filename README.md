@@ -1331,3 +1331,6 @@ int main(){
 		for(int j=0;j<n;j++){
 			a1[j] += b1[j];
 			c1[j] += d1[j];
+		}
+#else
+		for(int j=0;j<n;j++){
