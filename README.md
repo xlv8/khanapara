@@ -1320,3 +1320,9 @@ int main(){
 	cout << a1 << endl;
 	cout << b1 << endl;
 	cout << c1 << endl;
+	cout << d1 << endl;
+
+	clock_t start = clock();
+
+	int c = 0;
+	while (c++ < 10000){
