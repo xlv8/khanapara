@@ -1315,3 +1315,8 @@ int main(){
 	memset(b1,0,n * sizeof(double));
 	memset(c1,0,n * sizeof(double));
 	memset(d1,0,n * sizeof(double));
+
+	//  Print the addresses
+	cout << a1 << endl;
+	cout << b1 << endl;
+	cout << c1 << endl;
