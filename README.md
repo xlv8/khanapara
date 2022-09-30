@@ -1326,3 +1326,8 @@ int main(){
 
 	int c = 0;
 	while (c++ < 10000){
+
+#if ONE_LOOP
+		for(int j=0;j<n;j++){
+			a1[j] += b1[j];
+			c1[j] += d1[j];
