@@ -1347,3 +1347,11 @@ int main(){
 	cout << "seconds = " << (double)(end - start) / CLOCKS_PER_SEC << endl;
 
 	system("pause");
+	return 0;
+}
+
+
+Benchmark Results:
+EDIT: Results on an actual Core 2 architecture machine:
+2 x Intel Xeon X5482 Harpertown @ 3.2 GHz:
+#define ALLOCATE_SEPERATE
