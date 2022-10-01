@@ -1336,3 +1336,14 @@ int main(){
 		for(int j=0;j<n;j++){
 			a1[j] += b1[j];
 		}
+		for(int j=0;j<n;j++){
+			c1[j] += d1[j];
+		}
+#endif
+
+	}
+
+	clock_t end = clock();
+	cout << "seconds = " << (double)(end - start) / CLOCKS_PER_SEC << endl;
+
+	system("pause");
