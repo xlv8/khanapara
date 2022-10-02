@@ -1361,3 +1361,6 @@ EDIT: Results on an actual Core 2 architecture machine:
 007A0020
 00870020
 seconds = 6.206
+
+#define ALLOCATE_SEPERATE
+//#define ONE_LOOP
