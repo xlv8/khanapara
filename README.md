@@ -1355,3 +1355,9 @@ Benchmark Results:
 EDIT: Results on an actual Core 2 architecture machine:
 2 x Intel Xeon X5482 Harpertown @ 3.2 GHz:
 #define ALLOCATE_SEPERATE
+#define ONE_LOOP
+00600020
+006D0020
+007A0020
+00870020
+seconds = 6.206
