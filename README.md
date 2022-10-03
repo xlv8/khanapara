@@ -1381,3 +1381,9 @@ seconds = 1.894
 //#define ALLOCATE_SEPERATE
 //#define ONE_LOOP
 008C0020
+00983520
+00A46A20
+00B09F20
+seconds = 1.993
+
+Observations:
