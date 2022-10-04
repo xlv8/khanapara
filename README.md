@@ -1387,3 +1387,9 @@ seconds = 1.894
 seconds = 1.993
 
 Observations:
+
+6.206 seconds with one loop and 2.116 seconds with two loops. This reproduces the OP's results exactly.
+In the first two tests, the arrays are allocated separately. You'll notice that they all have the same alignment relative to the page.
+In the second two tests, the arrays are packed together to break that alignment. Here you'll notice both loops are faster. Furthermore, the second (double) loop is now the slower one as you would normally expect.
+
+As @Stephen Cannon points out in the comments, there is very likely possibility that this alignment causes false aliasing in the load/store units or the cache. I Googled around for this and found that Intel actually has a hardware counter for partial address aliasing stalls:
