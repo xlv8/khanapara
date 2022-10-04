@@ -1397,3 +1397,5 @@ http://software.intel.com/sites/products/documentation/doclib/stdxe/2013/~amplif
 
 5 Regions - Explanations
 Region 1:
+This one is easy. The dataset is so small that the performance is dominated by overhead like looping and branching.
+Region 2:
