@@ -1393,3 +1393,7 @@ In the first two tests, the arrays are allocated separately. You'll notice that 
 In the second two tests, the arrays are packed together to break that alignment. Here you'll notice both loops are faster. Furthermore, the second (double) loop is now the slower one as you would normally expect.
 
 As @Stephen Cannon points out in the comments, there is very likely possibility that this alignment causes false aliasing in the load/store units or the cache. I Googled around for this and found that Intel actually has a hardware counter for partial address aliasing stalls:
+http://software.intel.com/sites/products/documentation/doclib/stdxe/2013/~amplifierxe/pmw_dp/events/partial_address_alias.html
+
+5 Regions - Explanations
+Region 1:
