@@ -1405,3 +1405,6 @@ Region 3:
 At this point, the data no longer fits in L1 cache. So performance is capped by the L1 <-> L2 cache bandwidth.
 Region 4:
 The performance drop in the single-loop is what we are observing. And as mentioned, this is due to the alignment which (most likely) causes false aliasing stalls in the processor load/store units.
+However, in order for false aliasing to occur, there must be a large enough stride between the datasets. This is why you don't see this in region 3.
+Region 5:
+At this point, nothing fits in cache. So you're bound by memory bandwidth.
