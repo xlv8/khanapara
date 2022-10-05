@@ -1399,3 +1399,9 @@ http://software.intel.com/sites/products/documentation/doclib/stdxe/2013/~amplif
 Region 1:
 This one is easy. The dataset is so small that the performance is dominated by overhead like looping and branching.
 Region 2:
+Here, as the data sizes increases, the amount of relative overhead goes down and the performance "saturates". Here two loops is slower because it has twice as much loop and branching overhead.
+I'm not sure exactly what's going on here... Alignment could still play an effect as Agner Fog mentions cache bank conflicts. (That link is about Sandy Bridge, but the idea should still be applicable to Core 2.)
+Region 3:
+At this point, the data no longer fits in L1 cache. So performance is capped by the L1 <-> L2 cache bandwidth.
+Region 4:
+The performance drop in the single-loop is what we are observing. And as mentioned, this is due to the alignment which (most likely) causes false aliasing stalls in the processor load/store units.
