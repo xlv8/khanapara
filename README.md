@@ -1412,3 +1412,11 @@ At this point, nothing fits in cache. So you're bound by memory bandwidth.
 
 
 
+
+===>
+Why are elementwise additions much faster in separate loops than in a combined loop?
+
+OK, the right answer definitely has to do something with the CPU cache. But to use the cache argument can be quite difficult, especially without data.
+There are many answers, that led to a lot of discussion, but let's face it: Cache issues can be very complex and are not one dimensional. They depend heavily on the size of the data, so my question was unfair: It turned out to be at a very interesting point in the cache graph.
+@Mysticial's answer convinced a lot of people (including me), probably because it was the only one that seemed to rely on facts, but it was only one "data point" of the truth.
+That's why I combined his test (using a continuous vs. separate allocation) and @James' Answer's advice.
