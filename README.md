@@ -1408,3 +1408,6 @@ The performance drop in the single-loop is what we are observing. And as mention
 However, in order for false aliasing to occur, there must be a large enough stride between the datasets. This is why you don't see this in region 3.
 Region 5:
 At this point, nothing fits in cache. So you're bound by memory bandwidth.
+
+
+
