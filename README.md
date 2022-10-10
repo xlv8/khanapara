@@ -1420,3 +1420,8 @@ OK, the right answer definitely has to do something with the CPU cache. But to u
 There are many answers, that led to a lot of discussion, but let's face it: Cache issues can be very complex and are not one dimensional. They depend heavily on the size of the data, so my question was unfair: It turned out to be at a very interesting point in the cache graph.
 @Mysticial's answer convinced a lot of people (including me), probably because it was the only one that seemed to rely on facts, but it was only one "data point" of the truth.
 That's why I combined his test (using a continuous vs. separate allocation) and @James' Answer's advice.
+The graphs below shows, that most of the answers and especially the majority of comments to the question and answers can be considered completely wrong or true depending on the exact scenario and parameters used.
+Note that my initial question was at n = 100.000. This point (by accident) exhibits special behavior:
+
+It possesses the greatest discrepancy between the one and two loop'ed version (almost a factor of three)
+It is the only point, where one-loop (namely with continuous allocation) beats the two-loop version. (This made Mysticial's answer possible, at all.)
