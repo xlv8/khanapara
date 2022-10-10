@@ -1429,3 +1429,11 @@ It is the only point, where one-loop (namely with continuous allocation) beats t
 The result using initialized data:
 
 The result using uninitialized data (this is what Mysticial tested):
+
+And this is a hard-to-explain one: Initialized data, that is allocated once and reused for every following test case of different vector size:
+
+Proposal
+Every low-level performance related question on Stack Overflow should be required to provide MFLOPS information for the whole range of cache relevant data sizes! It's a waste of everybody's time to think of answers and especially discuss them with others without this information.
+
+===>
+Why are elementwise additions much faster in separate loops than in a combined loop?
