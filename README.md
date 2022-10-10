@@ -1425,3 +1425,7 @@ Note that my initial question was at n = 100.000. This point (by accident) exhib
 
 It possesses the greatest discrepancy between the one and two loop'ed version (almost a factor of three)
 It is the only point, where one-loop (namely with continuous allocation) beats the two-loop version. (This made Mysticial's answer possible, at all.)
+
+The result using initialized data:
+
+The result using uninitialized data (this is what Mysticial tested):
