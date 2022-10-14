@@ -1437,3 +1437,9 @@ Every low-level performance related question on Stack Overflow should be requir
 
 ===>
 Why are elementwise additions much faster in separate loops than in a combined loop?
+
+The second loop involves a lot less cache activity, so it's easier for the processor to keep up with the memory demands.
+
+------------------------------
+What is the difference between #include <filename> and #include “filename”?
+<div class="post-text" itemprop="text">
