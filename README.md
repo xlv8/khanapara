@@ -1443,3 +1443,7 @@ The second loop involves a lot less cache activity, so it's easier for the proce
 ------------------------------
 What is the difference between #include <filename> and #include “filename”?
 <div class="post-text" itemprop="text">
+<p>In the C and C++ programming languages, what is the difference between using angle brackets and using quotes in an <code>include</code> statement, as follows?</p>
+<ol>
+<li><code>#include &lt;filename&gt;</code> </li>
+<li><code>#include "filename"</code></li>
