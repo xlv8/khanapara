@@ -1462,3 +1462,6 @@ A more complete description is available in the GCC documentation on search path
 
 ===>
 What is the difference between #include <filename> and #include “filename”?
+
+The only way to know is to read your implementation's documentation.
+In the C standard, section 6.10.2, paragraphs 2 to 4 state:
