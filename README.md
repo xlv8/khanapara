@@ -1471,3 +1471,5 @@ A preprocessing directive of the form
 #include <h-char-sequence> new-line
 
 searches a sequence of implementation-defined places for a header identified uniquely by the specified sequence between the < and > delimiters, and causes the replacement of that directive by the entire contents of the header. How the places are specified or the header identified is implementation-defined.
+A preprocessing directive of the form
+#include "q-char-sequence" new-line
