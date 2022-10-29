@@ -1476,3 +1476,5 @@ A preprocessing directive of the form
 
 causes the replacement of that directive by the entire contents of the source file identified by the specified sequence between the " delimiters. The named source file is searched for in an implementation-defined manner. If this search is not supported, or if the search fails, the directive is reprocessed as if it read
 #include <h-char-sequence> new-line
+
+with the identical contained sequence (including > characters, if any) from the original
