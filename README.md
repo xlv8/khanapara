@@ -1480,3 +1480,8 @@ causes the replacement of that directive by the entire contents of the source fi
 with the identical contained sequence (including > characters, if any) from the original
   directive.
 A preprocessing directive of the form
+#include pp-tokens new-line
+
+(that does not match one of the two previous forms) is permitted. The preprocessing tokens after include in the directive are processed just as in normal text. (Each identifier currently defined as a macro name is replaced by its replacement list of preprocessing tokens.) The directive resulting after all replacements shall match one of the two previous forms. The method by which a sequence of preprocessing tokens between a < and a > preprocessing token pair or a pair of " characters is combined into a single header name preprocessing token is implementation-defined.
+
+Definitions:
