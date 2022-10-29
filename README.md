@@ -1478,3 +1478,5 @@ causes the replacement of that directive by the entire contents of the source fi
 #include <h-char-sequence> new-line
 
 with the identical contained sequence (including > characters, if any) from the original
+  directive.
+A preprocessing directive of the form
