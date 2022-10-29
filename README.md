@@ -1473,3 +1473,6 @@ A preprocessing directive of the form
 searches a sequence of implementation-defined places for a header identified uniquely by the specified sequence between the < and > delimiters, and causes the replacement of that directive by the entire contents of the header. How the places are specified or the header identified is implementation-defined.
 A preprocessing directive of the form
 #include "q-char-sequence" new-line
+
+causes the replacement of that directive by the entire contents of the source file identified by the specified sequence between the " delimiters. The named source file is searched for in an implementation-defined manner. If this search is not supported, or if the search fails, the directive is reprocessed as if it read
+#include <h-char-sequence> new-line
