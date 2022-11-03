@@ -1497,3 +1497,7 @@ What is the difference between #include <filename> and #include “filename”?
 The sequence of characters between < and > uniquely refer to a header, which isn't necessarily a file. Implementations are pretty much free to use the character sequence as they wish. (Mostly, however, just treat it as a file name and do a search in the include path, as the other posts state.)
 If the #include "file" form is used, the implementation first looks for a file of the given name, if supported. If not (supported), or if the search fails, the implementation behaves as though the other (#include <file>) form was used.
 Also, a third form exists and is used when the #include directive doesn't match either of the forms above. In this form, some basic preprocessing (such as macro expansion) is done on the "operands" of the #include directive, and the result is expected to match one of the two other forms.
+
+------------------------------
+What is The Rule of Three?
+<div class="post-text" itemprop="text">
