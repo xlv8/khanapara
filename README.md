@@ -1493,3 +1493,6 @@ q-char: any member of the source character set except the new-line character and
 
 ===>
 What is the difference between #include <filename> and #include “filename”?
+
+The sequence of characters between < and > uniquely refer to a header, which isn't necessarily a file. Implementations are pretty much free to use the character sequence as they wish. (Mostly, however, just treat it as a file name and do a search in the include path, as the other posts state.)
+If the #include "file" form is used, the implementation first looks for a file of the given name, if supported. If not (supported), or if the search fails, the implementation behaves as though the other (#include <file>) form was used.
