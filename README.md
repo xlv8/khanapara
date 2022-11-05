@@ -1503,3 +1503,6 @@ What is The Rule of Three?
 <div class="post-text" itemprop="text">
 <ul>
 <li>What does <em>copying an object</em> mean?</li>
+<li>What are the <em>copy constructor</em> and the <em>copy assignment operator</em>?</li>
+<li>When do I need to declare them myself?</li>
+<li>How can I prevent my objects from being copied?</li>
