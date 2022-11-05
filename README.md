@@ -1501,3 +1501,5 @@ Also, a third form exists and is used when the #include directive doesn't match 
 ------------------------------
 What is The Rule of Three?
 <div class="post-text" itemprop="text">
+<ul>
+<li>What does <em>copying an object</em> mean?</li>
