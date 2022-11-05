@@ -1506,3 +1506,9 @@ What is The Rule of Three?
 <li>What are the <em>copy constructor</em> and the <em>copy assignment operator</em>?</li>
 <li>When do I need to declare them myself?</li>
 <li>How can I prevent my objects from being copied?</li>
+</ul>
+</div>
+List of answers:
+
+
+===>
