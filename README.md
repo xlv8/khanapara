@@ -1521,3 +1521,9 @@ and we should understand what "copying an object" actually means.
 Let us consider a simple example:
 class person
 {
+	std::string name;
+	int age;
+
+public:
+
+	person(const std::string& name, int age) : name(name), age(age)
