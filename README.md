@@ -1518,3 +1518,6 @@ Introduction
 C++ treats variables of user-defined types with value semantics.
 This means that objects are implicitly copied in various contexts,
 and we should understand what "copying an object" actually means.
+Let us consider a simple example:
+class person
+{
