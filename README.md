@@ -1512,3 +1512,8 @@ List of answers:
 
 
 ===>
+What is The Rule of Three?
+
+Introduction
+C++ treats variables of user-defined types with value semantics.
+This means that objects are implicitly copied in various contexts,
