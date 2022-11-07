@@ -1532,3 +1532,10 @@ public:
 };
 
 int main()
+{
+	person a("Bjarne Stroustrup", 60);
+	person b(a);   // What happens here?
+	b = a;         // And here?
+}
+
+(If you are puzzled by the name(name), age(age) part,
