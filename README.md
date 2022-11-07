@@ -1527,3 +1527,8 @@ class person
 public:
 
 	person(const std::string& name, int age) : name(name), age(age)
+	{
+	}
+};
+
+int main()
