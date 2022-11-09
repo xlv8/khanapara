@@ -1539,3 +1539,7 @@ int main()
 }
 
 (If you are puzzled by the name(name), age(age) part,
+this is called a member initializer list.)
+Special member functions
+What does it mean to copy a person object?
+The main function shows two distinct copying scenarios.
