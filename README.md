@@ -1543,3 +1543,6 @@ this is called a member initializer list.)
 Special member functions
 What does it mean to copy a person object?
 The main function shows two distinct copying scenarios.
+The initialization person b(a); is performed by the copy constructor.
+Its job is to construct a fresh object based on the state of an existing object.
+The assignment b = a is performed by the copy assignment operator.
