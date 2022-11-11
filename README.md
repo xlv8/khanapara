@@ -1546,3 +1546,7 @@ The main function shows two distinct copying scenarios.
 The initialization person b(a); is performed by the copy constructor.
 Its job is to construct a fresh object based on the state of an existing object.
 The assignment b = a is performed by the copy assignment operator.
+Its job is generally a little more complicated,
+because the target object is already in some valid state that needs to be dealt with.
+Since we declared neither the copy constructor nor the assignment operator (nor the destructor) ourselves,
+these are implicitly defined for us. Quote from the standard:
