@@ -1550,3 +1550,8 @@ Its job is generally a little more complicated,
 because the target object is already in some valid state that needs to be dealt with.
 Since we declared neither the copy constructor nor the assignment operator (nor the destructor) ourselves,
 these are implicitly defined for us. Quote from the standard:
+
+The [...] copy constructor and copy assignment operator, [...] and destructor are special member functions.
+  [ Note: The implementation will implicitly declare these member functions
+  for some class types when the program does not explicitly declare them.
+  The implementation will implicitly define them if they are used. [...] end note ]
