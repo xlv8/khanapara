@@ -1563,3 +1563,8 @@ The implicitly-defined copy constructor for a non-union class X performs a membe
   [n3126.pdf section 12.8 §16]
 The implicitly-defined copy assignment operator for a non-union class X performs memberwise copy assignment
   of its subobjects.
+  [n3126.pdf section 12.8 §30]
+
+Implicit definitions
+The implicitly-defined special member functions for person look like this:
+// 1. copy constructor
