@@ -1555,3 +1555,4 @@ The [...] copy constructor and copy assignment operator, [...] and destructor ar
   [ Note: The implementation will implicitly declare these member functions
   for some class types when the program does not explicitly declare them.
   The implementation will implicitly define them if they are used. [...] end note ]
+  [n3126.pdf section 12 §1]
