@@ -1556,3 +1556,10 @@ The [...] copy constructor and copy assignment operator, [...] and destructor ar
   for some class types when the program does not explicitly declare them.
   The implementation will implicitly define them if they are used. [...] end note ]
   [n3126.pdf section 12 §1]
+
+By default, copying an object means copying its members:
+
+The implicitly-defined copy constructor for a non-union class X performs a memberwise copy of its subobjects.
+  [n3126.pdf section 12.8 §16]
+The implicitly-defined copy assignment operator for a non-union class X performs memberwise copy assignment
+  of its subobjects.
