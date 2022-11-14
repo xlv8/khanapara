@@ -1568,3 +1568,5 @@ The implicitly-defined copy assignment operator for a non-union class X performs
 Implicit definitions
 The implicitly-defined special member functions for person look like this:
 // 1. copy constructor
+person(const person& that) : name(that.name), age(that.age)
+{
