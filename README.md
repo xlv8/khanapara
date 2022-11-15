@@ -1570,3 +1570,6 @@ The implicitly-defined special member functions for person look like this:
 // 1. copy constructor
 person(const person& that) : name(that.name), age(that.age)
 {
+}
+
+// 2. copy assignment operator
