@@ -1581,3 +1581,6 @@ person& operator=(const person& that)
 }
 
 // 3. destructor
+~person()
+{
+}
