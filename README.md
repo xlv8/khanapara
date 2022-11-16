@@ -1589,3 +1589,6 @@ Memberwise copying is exactly what we want in this case:
 name and age are copied, so we get a self-contained, independent person object.
 The implicitly-defined destructor is always empty.
 This is also fine in this case since we did not acquire any resources in the constructor.
+The members' destructors are implicitly called after the person destructor is finished:
+
+After executing the body of the destructor and destroying any automatic objects allocated within the body,
