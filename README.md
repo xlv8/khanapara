@@ -1592,3 +1592,8 @@ This is also fine in this case since we did not acquire any resources in the con
 The members' destructors are implicitly called after the person destructor is finished:
 
 After executing the body of the destructor and destroying any automatic objects allocated within the body,
+  a destructor for class X calls the destructors for X's direct [...] members
+  [n3126.pdf 12.4 §6]
+
+Managing resources
+So when should we declare those special member functions explicitly?
