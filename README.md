@@ -1584,3 +1584,8 @@ person& operator=(const person& that)
 ~person()
 {
 }
+
+Memberwise copying is exactly what we want in this case:
+name and age are copied, so we get a self-contained, independent person object.
+The implicitly-defined destructor is always empty.
+This is also fine in this case since we did not acquire any resources in the constructor.
