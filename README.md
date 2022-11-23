@@ -1597,3 +1597,8 @@ After executing the body of the destructor and destroying any automatic objects 
 
 Managing resources
 So when should we declare those special member functions explicitly?
+When our class manages a resource, that is,
+when an object of the class is responsible for that resource.
+That usually means the resource is acquired in the constructor
+(or passed into the constructor) and released in the destructor.
+Let us go back in time to pre-standard C++.
