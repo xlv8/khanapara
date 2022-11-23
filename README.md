@@ -1602,3 +1602,7 @@ when an object of the class is responsible for that resource.
 That usually means the resource is acquired in the constructor
 (or passed into the constructor) and released in the destructor.
 Let us go back in time to pre-standard C++.
+There was no such thing as std::string, and programmers were in love with pointers.
+The person class might have looked like this:
+class person
+{
