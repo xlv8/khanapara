@@ -1606,3 +1606,9 @@ There was no such thing as std::string, and programmers were in love with pointe
 The person class might have looked like this:
 class person
 {
+	char* name;
+	int age;
+
+public:
+
+	// the constructor acquires a resource:
