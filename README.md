@@ -1619,3 +1619,7 @@ public:
 		strcpy(name, the_name);
 		age = the_age;
 	}
+
+	// the destructor must release this resource via delete[]
+	~person()
+	{
