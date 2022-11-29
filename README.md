@@ -1623,3 +1623,6 @@ public:
 	// the destructor must release this resource via delete[]
 	~person()
 	{
+		delete[] name;
+	}
+};
