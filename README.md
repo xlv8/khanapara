@@ -1635,3 +1635,11 @@ This has several unpleasant effects:
 
 Changes via a can be observed via b.
 Once b is destroyed, a.name is a dangling pointer.
+If a is destroyed, deleting the dangling pointer yields undefined behavior.
+Since the assignment does not take into account what name pointed to before the assignment,
+sooner or later you will get memory leaks all over the place.
+
+Explicit definitions
+Since memberwise copying does not have the desired effect, we must define the copy constructor and the copy assignment operator explicitly to make deep copies of the character array:
+// 1. copy constructor
+person(const person& that)
