@@ -1626,3 +1626,6 @@ public:
 		delete[] name;
 	}
 };
+
+Even today, people still write classes in this style and get into trouble:
+"I pushed a person into a vector and now I get crazy memory errors!"
