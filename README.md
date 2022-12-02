@@ -1643,3 +1643,8 @@ Explicit definitions
 Since memberwise copying does not have the desired effect, we must define the copy constructor and the copy assignment operator explicitly to make deep copies of the character array:
 // 1. copy constructor
 person(const person& that)
+{
+	name = new char[strlen(that.name) + 1];
+	strcpy(name, that.name);
+	age = that.age;
+}
