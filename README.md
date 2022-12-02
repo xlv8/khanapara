@@ -1629,3 +1629,9 @@ public:
 
 Even today, people still write classes in this style and get into trouble:
 "I pushed a person into a vector and now I get crazy memory errors!"
+Remember that by default, copying an object means copying its members,
+but copying the name member merely copies a pointer, not the character array it points to!
+This has several unpleasant effects:
+
+Changes via a can be observed via b.
+Once b is destroyed, a.name is a dangling pointer.
