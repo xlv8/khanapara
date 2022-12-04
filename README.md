@@ -1648,3 +1648,7 @@ person(const person& that)
 	strcpy(name, that.name);
 	age = that.age;
 }
+
+// 2. copy assignment operator
+person& operator=(const person& that)
+{
