@@ -1652,3 +1652,5 @@ person(const person& that)
 // 2. copy assignment operator
 person& operator=(const person& that)
 {
+	if (this != &that)
+	{
