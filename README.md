@@ -1654,3 +1654,7 @@ person& operator=(const person& that)
 {
 	if (this != &that)
 	{
+		delete[] name;
+		// This is a dangerous point in the flow of execution!
+		// We have temporarily invalidated the class invariants,
+		// and the next statement might throw an exception,
