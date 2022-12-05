@@ -1658,3 +1658,5 @@ person& operator=(const person& that)
 		// This is a dangerous point in the flow of execution!
 		// We have temporarily invalidated the class invariants,
 		// and the next statement might throw an exception,
+		// leaving the object in an invalid state :(
+		name = new char[strlen(that.name) + 1];
