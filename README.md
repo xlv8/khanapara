@@ -1660,3 +1660,8 @@ person& operator=(const person& that)
 		// and the next statement might throw an exception,
 		// leaving the object in an invalid state :(
 		name = new char[strlen(that.name) + 1];
+		strcpy(name, that.name);
+		age = that.age;
+	}
+	return *this;
+}
