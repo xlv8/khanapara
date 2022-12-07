@@ -1665,3 +1665,5 @@ person& operator=(const person& that)
 	}
 	return *this;
 }
+
+Note the difference between initialization and assignment:
