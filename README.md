@@ -1667,3 +1667,8 @@ person& operator=(const person& that)
 }
 
 Note the difference between initialization and assignment:
+we must tear down the old state before assigning to name to prevent memory leaks.
+Also, we have to protect against self-assignment of the form x = x.
+Without that check, delete[] name would delete the array containing the source string,
+because when you write x = x, both this->name and that.name contain the same pointer.
+Exception safety
