@@ -1672,3 +1672,6 @@ Also, we have to protect against self-assignment of the form x = x.
 Without that check, delete[] name would delete the array containing the source string,
 because when you write x = x, both this->name and that.name contain the same pointer.
 Exception safety
+Unfortunately, this solution will fail if new char[...] throws an exception due to memory exhaustion.
+One possible solution is to introduce a local variable and reorder the statements:
+// 2. copy assignment operator
