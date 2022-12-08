@@ -1687,3 +1687,9 @@ person& operator=(const person& that)
 	age = that.age;
 	return *this;
 }
+
+This also takes care of self-assignment without an explicit check.
+An even more robust solution to this problem is the copy-and-swap idiom,
+but I will not go into the details of exception safety here.
+I only mentioned exceptions to make the following point: Writing classes that manage resources is hard.
+Noncopyable resources
