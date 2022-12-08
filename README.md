@@ -1675,3 +1675,8 @@ Exception safety
 Unfortunately, this solution will fail if new char[...] throws an exception due to memory exhaustion.
 One possible solution is to introduce a local variable and reorder the statements:
 // 2. copy assignment operator
+person& operator=(const person& that)
+{
+	char* local_name = new char[strlen(that.name) + 1];
+	// If the above statement throws,
+	// the object is still in the same state as before.
