@@ -1696,3 +1696,10 @@ Noncopyable resources
 Some resources cannot or should not be copied, such as file handles or mutexes.
 In that case, simply declare the copy constructor and copy assignment operator as private without giving a definition:
 private:
+
+	person(const person& that);
+	person& operator=(const person& that);
+
+Alternatively, you can inherit from boost::noncopyable or declare them as deleted (in C++11 and above):
+person(const person& that) = delete;
+person& operator=(const person& that) = delete;
