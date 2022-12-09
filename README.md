@@ -1703,3 +1703,8 @@ private:
 Alternatively, you can inherit from boost::noncopyable or declare them as deleted (in C++11 and above):
 person(const person& that) = delete;
 person& operator=(const person& that) = delete;
+
+The rule of three
+Sometimes you need to implement a class that manages a resource.
+(Never manage multiple resources in a single class,
+this will only lead to pain.)
