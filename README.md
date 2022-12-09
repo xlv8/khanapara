@@ -1693,3 +1693,6 @@ An even more robust solution to this problem is the copy-and-swap idiom,
 but I will not go into the details of exception safety here.
 I only mentioned exceptions to make the following point: Writing classes that manage resources is hard.
 Noncopyable resources
+Some resources cannot or should not be copied, such as file handles or mutexes.
+In that case, simply declare the copy constructor and copy assignment operator as private without giving a definition:
+private:
