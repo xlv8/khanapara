@@ -1708,3 +1708,8 @@ The rule of three
 Sometimes you need to implement a class that manages a resource.
 (Never manage multiple resources in a single class,
 this will only lead to pain.)
+In that case, remember the rule of three:
+
+If you need to explicitly declare either the destructor,
+  copy constructor or copy assignment operator yourself,
+  you probably need to explicitly declare all three of them.
