@@ -1713,3 +1713,8 @@ In that case, remember the rule of three:
 If you need to explicitly declare either the destructor,
   copy constructor or copy assignment operator yourself,
   you probably need to explicitly declare all three of them.
+
+(Unfortunately, this "rule" is not enforced by the C++ standard or any compiler I am aware of.)
+The rule of five
+From C++11 on, an object has 2 extra special member functions: the move constructor and move assignment. The rule of five states to implement these functions as well.
+An example with the signatures:
