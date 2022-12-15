@@ -1724,3 +1724,8 @@ class person
 	int age;
 
 public:
+	person(const std::string& name, int age);        // Ctor
+	person(const person &) = default;                // Copy Ctor
+	person(person &&) noexcept = default;            // Move Ctor
+	person& operator=(const person &) = default;     // Copy Assignment
+	person& operator=(person &&) noexcept = default; // Move Assignment
