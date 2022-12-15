@@ -1718,3 +1718,9 @@ If you need to explicitly declare either the destructor,
 The rule of five
 From C++11 on, an object has 2 extra special member functions: the move constructor and move assignment. The rule of five states to implement these functions as well.
 An example with the signatures:
+class person
+{
+	std::string name;
+	int age;
+
+public:
