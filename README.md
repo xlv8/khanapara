@@ -1729,3 +1729,5 @@ public:
 	person(person &&) noexcept = default;            // Move Ctor
 	person& operator=(const person &) = default;     // Copy Assignment
 	person& operator=(person &&) noexcept = default; // Move Assignment
+	~person() noexcept = default;                    // Dtor
+};
