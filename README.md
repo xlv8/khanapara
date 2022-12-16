@@ -1740,3 +1740,6 @@ because an existing class such as std::string already does it for you.
 Just compare the simple code using a std::string member
 to the convoluted and error-prone alternative using a char* and you should be convinced.
 As long as you stay away from raw pointer members, the rule of three is unlikely to concern your own code.
+
+===>
+What is The Rule of Three?
