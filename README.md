@@ -1743,3 +1743,7 @@ As long as you stay away from raw pointer members, the rule of three is unlikely
 
 ===>
 What is The Rule of Three?
+
+The Rule of Three is a rule of thumb for C++, basically saying
+
+If your class needs any of
