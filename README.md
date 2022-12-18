@@ -1747,3 +1747,5 @@ What is The Rule of Three?
 The Rule of Three is a rule of thumb for C++, basically saying
 
 If your class needs any of
+
+a copy constructor,
