@@ -1749,3 +1749,9 @@ The Rule of Three is a rule of thumb for C++, basically saying
 If your class needs any of
 
 a copy constructor,
+an assignment operator,
+or a destructor,
+
+defined explictly, then it is likely to need all three of them.
+
+The reasons for this is that all three of them are usually used to manage a resource, and if your class manages a resource, it usually needs to manage copying as well as freeing.
