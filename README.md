@@ -1764,3 +1764,7 @@ What is The Rule of Three?
 The law of the big three is as specified above.
 An easy example, in plain English, of the kind of problem it solves:
 Non default destructor
+You allocated memory in your constructor and so you need to write a destructor to delete it.  Otherwise you will cause a memory leak.
+You might think that this is job done.
+The problem will be, if a copy is made of your object, then the copy will point to the same memory as the original object.
+Once, one of these deletes the memory in its destructor, the other will have a pointer to invalid memory (this is called a dangling pointer) when it tries to use it things are going to get hairy.
