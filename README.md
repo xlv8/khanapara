@@ -1768,3 +1768,8 @@ You allocated memory in your constructor and so you need to write a destructor t
 You might think that this is job done.
 The problem will be, if a copy is made of your object, then the copy will point to the same memory as the original object.
 Once, one of these deletes the memory in its destructor, the other will have a pointer to invalid memory (this is called a dangling pointer) when it tries to use it things are going to get hairy.
+Therefore, you write a copy constructor so that it allocates new objects their own pieces of memory to destroy.
+Assignment operator and copy constructor
+You allocated memory in your constructor to a member pointer of your class.  When you copy an object of this class the default assignment operator and copy constructor will copy the value of this member pointer to the new object.
+This means that the new object and the old object will be pointing at the same piece of memory so when you change it in one object it will be changed for the other objerct too.  If one object deletes this memory the other will carry on trying to use it - eek.
+To resolve this you write your own version of the copy constructor and assignment operator.  Your versions allocate separate memory to the new objects and copy across the values that the first pointer is pointing to rather than its address.
