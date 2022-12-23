@@ -1760,3 +1760,7 @@ If there is no good semantic for copying the resource your class manages, then c
 
 ===>
 What is The Rule of Three?
+
+The law of the big three is as specified above.
+An easy example, in plain English, of the kind of problem it solves:
+Non default destructor
