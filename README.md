@@ -1773,3 +1773,9 @@ Assignment operator and copy constructor
 You allocated memory in your constructor to a member pointer of your class.  When you copy an object of this class the default assignment operator and copy constructor will copy the value of this member pointer to the new object.
 This means that the new object and the old object will be pointing at the same piece of memory so when you change it in one object it will be changed for the other objerct too.  If one object deletes this memory the other will carry on trying to use it - eek.
 To resolve this you write your own version of the copy constructor and assignment operator.  Your versions allocate separate memory to the new objects and copy across the values that the first pointer is pointing to rather than its address.
+
+------------------------------
+What are the basic rules and idioms for operator overloading?
+<div class="post-text" itemprop="text">
+<p>Note: The answers were given in <em>a specific order</em>, but since many users sort answers according to votes, rather than the time they were given, here's an <strong><em>index of the answers</em></strong> in the order in which they make most sense:</p>
+<ul>
