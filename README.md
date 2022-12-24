@@ -1781,3 +1781,6 @@ What are the basic rules and idioms for operator overloading?
 <ul>
 <li><a href="https://stackoverflow.com/questions/4421706/operator-overloading-in-c/4421715#4421715">The General Syntax of operator overloading in C++</a></li>
 <li><a href="https://stackoverflow.com/questions/4421706/operator-overloading-in-c/4421708#4421708">The Three Basic Rules of Operator Overloading in C++</a></li>
+<li><a href="https://stackoverflow.com/questions/4421706/operator-overloading-in-c/4421729#4421729">The Decision between Member and Non-member</a></li>
+<li><a href="https://stackoverflow.com/questions/4421706/operator-overloading-in-c/4421719#4421719">Common operators to overload</a>
+<ul>
