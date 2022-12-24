@@ -1779,3 +1779,5 @@ What are the basic rules and idioms for operator overloading?
 <div class="post-text" itemprop="text">
 <p>Note: The answers were given in <em>a specific order</em>, but since many users sort answers according to votes, rather than the time they were given, here's an <strong><em>index of the answers</em></strong> in the order in which they make most sense:</p>
 <ul>
+<li><a href="https://stackoverflow.com/questions/4421706/operator-overloading-in-c/4421715#4421715">The General Syntax of operator overloading in C++</a></li>
+<li><a href="https://stackoverflow.com/questions/4421706/operator-overloading-in-c/4421708#4421708">The Three Basic Rules of Operator Overloading in C++</a></li>
