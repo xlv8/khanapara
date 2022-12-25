@@ -1786,3 +1786,9 @@ What are the basic rules and idioms for operator overloading?
 <ul>
 <li>Assignment Operator</li>
 <li>Input and Output Operators</li>
+<li>Function call operator</li>
+<li>Comparison operators</li>
+<li>Arithmetic Operators</li>
+<li>Array Subscripting</li>
+<li>Operators for Pointer-like Types</li>
+<li><a href="https://stackoverflow.com/questions/4421706/operator-overloading/16615725#16615725">Conversion Operators</a></li>
