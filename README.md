@@ -1784,3 +1784,5 @@ What are the basic rules and idioms for operator overloading?
 <li><a href="https://stackoverflow.com/questions/4421706/operator-overloading-in-c/4421729#4421729">The Decision between Member and Non-member</a></li>
 <li><a href="https://stackoverflow.com/questions/4421706/operator-overloading-in-c/4421719#4421719">Common operators to overload</a>
 <ul>
+<li>Assignment Operator</li>
+<li>Input and Output Operators</li>
