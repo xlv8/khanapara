@@ -1792,3 +1792,8 @@ What are the basic rules and idioms for operator overloading?
 <li>Array Subscripting</li>
 <li>Operators for Pointer-like Types</li>
 <li><a href="https://stackoverflow.com/questions/4421706/operator-overloading/16615725#16615725">Conversion Operators</a></li>
+</ul></li>
+<li><a href="https://stackoverflow.com/questions/4421706/operator-overloading-in-c/4421791#4421791">Overloading new and delete</a> </li>
+</ul>
+<p><sub>
+<em>(Note: This is meant to be an entry to <a href="https://stackoverflow.com/questions/tagged/c++-faq">Stack Overflow's C++ FAQ</a>. If you want to critique the idea of providing an FAQ in this form, then <a href="https://meta.stackexchange.com/questions/68647/setting-up-a-faq-for-the-c-tag">the posting on meta that started all this</a> would be the place to do that. Answers to that question are monitored in the <a href="http://chat.stackoverflow.com/rooms/10/c-lounge">C++ chatroom</a>, where the FAQ idea started out in the first place, so your answer is very likely to get read by those who came up with the idea.)</em>
