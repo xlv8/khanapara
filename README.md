@@ -1810,3 +1810,9 @@ Most of the work in overloading operators is boiler-plate code. That is little w
 Assignment Operator
 There's a lot to be said about assignment. However, most of it has already been said in GMan's famous Copy-And-Swap FAQ, so I'll skip most of it here, only listing the perfect assignment operator for reference:
 X& X::operator=(X rhs)
+{
+  swap(rhs);
+  return *this;
+}
+
+Bitshift Operators (used for Stream I/O)
