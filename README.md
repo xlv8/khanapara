@@ -1816,3 +1816,8 @@ X& X::operator=(X rhs)
 }
 
 Bitshift Operators (used for Stream I/O)
+The bitshift operators << and >>, although still used in hardware interfacing for the bit-manipulation functions they inherit from C, have become more prevalent as overloaded stream input and output operators in most applications.  For guidance overloading as bit-manipulation operators, see the section below on Binary Arithmetic Operators.  For implementing your own custom format and parsing logic when your object is used with iostreams, continue.
+The stream operators, among the most commonly overloaded operators, are binary infix operators for which the syntax specifies no restriction on whether they should be members or non-members.
+Since they change their left argument (they alter the stream’s state), they should, according to the rules of thumb, be implemented as members of their left operand’s type. However, their left operands are streams from the standard library, and while most of the stream output and input operators defined by the standard library are indeed defined as members of the stream classes, when you implement output and input operations for your own types, you cannot change the standard library’s stream types. That’s why you need to implement these operators for your own types as non-member functions.
+The canonical forms of the two are these:
+std::ostream& operator<<(std::ostream& os, const T& obj)
