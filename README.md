@@ -1826,3 +1826,10 @@ std::ostream& operator<<(std::ostream& os, const T& obj)
 
   return os;
 }
+
+std::istream& operator>>(std::istream& is, T& obj)
+{
+  // read obj from stream
+
+  if( /* no valid object of T found in stream */ )
+	is.setstate(std::ios::failbit);
