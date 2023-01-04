@@ -1833,3 +1833,6 @@ std::istream& operator>>(std::istream& is, T& obj)
 
   if( /* no valid object of T found in stream */ )
 	is.setstate(std::ios::failbit);
+
+  return is;
+}
