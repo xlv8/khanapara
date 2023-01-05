@@ -1836,3 +1836,11 @@ std::istream& operator>>(std::istream& is, T& obj)
 
   return is;
 }
+
+When implementing operator>>, manually setting the stream’s state is only necessary when the reading itself succeeded, but the result is not what would be expected.
+Function call operator
+The function call operator, used to create function objects, also known as functors, must be defined as a member function, so it always has the implicit this argument of member functions. Other than this, it can be overloaded to take any number of additional arguments, including zero.
+Here's an example of the syntax:
+class foo {
+public:
+	// Overloaded call operator
