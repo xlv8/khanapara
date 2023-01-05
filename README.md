@@ -1848,3 +1848,6 @@ public:
 		// ...
 	}
 };
+
+Usage:
+foo f;
