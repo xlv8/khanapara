@@ -1844,3 +1844,7 @@ Here's an example of the syntax:
 class foo {
 public:
 	// Overloaded call operator
+	int operator()(const std::string& y) {
+		// ...
+	}
+};
