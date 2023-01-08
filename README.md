@@ -1855,3 +1855,7 @@ int a = f("hello");
 
 Throughout the C++ standard library, function objects are always copied. Your own function objects should therefore be cheap to copy. If a function object absolutely needs to use data which is expensive to copy, it is better to store that data elsewhere and have the function object refer to it.
 Comparison operators
+The binary infix comparison operators should, according to the rules of thumb, be implemented as non-member functions1. The unary prefix negation ! should (according to the same rules) be implemented as a member function. (but it is usually not a good idea to overload it.)
+The standard library’s algorithms (e.g. std::sort()) and types (e.g. std::map) will always only expect operator< to be present. However, the users of your type will expect all the other operators to be present, too, so if you define operator<, be sure to follow the third fundamental rule of operator overloading and also define all the other boolean comparison operators. The canonical way to implement them is this:
+inline bool operator==(const X& lhs, const X& rhs){ /* do actual comparison */ }
+inline bool operator!=(const X& lhs, const X& rhs){return !operator==(lhs,rhs);}
