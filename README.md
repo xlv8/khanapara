@@ -1851,3 +1851,7 @@ public:
 
 Usage:
 foo f;
+int a = f("hello");
+
+Throughout the C++ standard library, function objects are always copied. Your own function objects should therefore be cheap to copy. If a function object absolutely needs to use data which is expensive to copy, it is better to store that data elsewhere and have the function object refer to it.
+Comparison operators
