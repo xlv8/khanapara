@@ -1859,3 +1859,6 @@ The binary infix comparison operators should, according to the rules of thumb, b
 The standard library’s algorithms (e.g. std::sort()) and types (e.g. std::map) will always only expect operator< to be present. However, the users of your type will expect all the other operators to be present, too, so if you define operator<, be sure to follow the third fundamental rule of operator overloading and also define all the other boolean comparison operators. The canonical way to implement them is this:
 inline bool operator==(const X& lhs, const X& rhs){ /* do actual comparison */ }
 inline bool operator!=(const X& lhs, const X& rhs){return !operator==(lhs,rhs);}
+inline bool operator< (const X& lhs, const X& rhs){ /* do actual comparison */ }
+inline bool operator> (const X& lhs, const X& rhs){return  operator< (rhs,lhs);}
+inline bool operator<=(const X& lhs, const X& rhs){return !operator> (lhs,rhs);}
