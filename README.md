@@ -1862,3 +1862,8 @@ inline bool operator!=(const X& lhs, const X& rhs){return !operator==(lhs,rhs);}
 inline bool operator< (const X& lhs, const X& rhs){ /* do actual comparison */ }
 inline bool operator> (const X& lhs, const X& rhs){return  operator< (rhs,lhs);}
 inline bool operator<=(const X& lhs, const X& rhs){return !operator> (lhs,rhs);}
+inline bool operator>=(const X& lhs, const X& rhs){return !operator< (lhs,rhs);}
+
+The important thing to note here is that only two of these operators actually do anything, the others are just forwarding their arguments to either of these two to do the actual work.
+The syntax for overloading the remaining binary boolean operators (||, &&) follows the rules of the comparison operators. However, it is very unlikely that you would find a reasonable use case for these2.
+1 As with all rules of thumb, sometimes there might be reasons to break this one, too. If so, do not forget that the left-hand operand of the binary comparison operators, which for member functions will be *this, needs to be const, too. So a comparison operator implemented as a member function would have to have this signature:
