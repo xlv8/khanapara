@@ -1871,3 +1871,7 @@ bool operator<(const X& rhs) const { /* do actual comparison with *this */ }
 
 (Note the const at the end.)
 2 It should be noted that the built-in version of || and && use shortcut semantics. While the user defined ones (because they are syntactic sugar for method calls) do not use shortcut semantics. User will expect these operators to have shortcut semantics, and their code may depend on it, Therefore it is highly advised NEVER to define them.
+Arithmetic Operators
+Unary arithmetic operators
+The unary increment and decrement operators come in both prefix and postfix flavor. To tell one from the other, the postfix variants take an additional dummy int argument. If you overload increment or decrement, be sure to always implement both prefix and postfix versions.
+Here is the canonical implementation of increment, decrement follows the same rules:
