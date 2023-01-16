@@ -1875,3 +1875,7 @@ Arithmetic Operators
 Unary arithmetic operators
 The unary increment and decrement operators come in both prefix and postfix flavor. To tell one from the other, the postfix variants take an additional dummy int argument. If you overload increment or decrement, be sure to always implement both prefix and postfix versions.
 Here is the canonical implementation of increment, decrement follows the same rules:
+class X {
+  X& operator++()
+  {
+	// do actual increment
