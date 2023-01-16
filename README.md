@@ -1868,3 +1868,6 @@ The important thing to note here is that only two of these operators actually do
 The syntax for overloading the remaining binary boolean operators (||, &&) follows the rules of the comparison operators. However, it is very unlikely that you would find a reasonable use case for these2.
 1 As with all rules of thumb, sometimes there might be reasons to break this one, too. If so, do not forget that the left-hand operand of the binary comparison operators, which for member functions will be *this, needs to be const, too. So a comparison operator implemented as a member function would have to have this signature:
 bool operator<(const X& rhs) const { /* do actual comparison with *this */ }
+
+(Note the const at the end.)
+2 It should be noted that the built-in version of || and && use shortcut semantics. While the user defined ones (because they are syntactic sugar for method calls) do not use shortcut semantics. User will expect these operators to have shortcut semantics, and their code may depend on it, Therefore it is highly advised NEVER to define them.
