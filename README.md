@@ -1883,3 +1883,11 @@ class X {
   }
   X operator++(int)
   {
+	X tmp(*this);
+	operator++();
+	return tmp;
+  }
+};
+
+Note that the postfix variant is implemented in terms of prefix. Also note that postfix does an extra copy.2
+Overloading unary minus and plus is not very common and probably best avoided. If needed, they should probably be overloaded as member functions.
