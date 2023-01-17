@@ -1879,3 +1879,7 @@ class X {
   X& operator++()
   {
 	// do actual increment
+	return *this;
+  }
+  X operator++(int)
+  {
