@@ -1900,3 +1900,7 @@ class X {
   {
 	// actual addition of rhs to *this
 	return *this;
+  }
+};
+inline X operator+(X lhs, const X& rhs)
+{
