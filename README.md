@@ -1891,3 +1891,12 @@ class X {
 
 Note that the postfix variant is implemented in terms of prefix. Also note that postfix does an extra copy.2
 Overloading unary minus and plus is not very common and probably best avoided. If needed, they should probably be overloaded as member functions.
+2 Also note that the postfix variant does more work and is therefore less efficient to use than the prefix variant. This is a good reason to generally prefer prefix increment over postfix increment. While compilers can usually optimize away the additional work of postfix increment for built-in types, they might not be able to do the same for user-defined types (which could be something as innocently looking as a list iterator). Once you got used to do i++, it becomes very hard to remember to do ++i instead when i is not of a built-in type (plus you'd have to change code when changing a type), so it is better to make a habit of always using prefix increment, unless postfix is explicitly needed.
+Binary arithmetic operators
+For the binary arithmetic operators, do not forget to obey the third basic rule operator overloading: If you provide +, also provide +=, if you provide -, do not omit -=, etc. Andrew Koenig is said to have been the first to observe that the compound assignment operators can be used as a base for their non-compound counterparts. That is, operator + is implemented in terms of +=, - is implemented in terms of -= etc.
+According to our rules of thumb, + and its companions should be non-members, while their compound assignment counterparts (+= etc.), changing their left argument, should be a member. Here is the exemplary code for += and +; the other binary arithmetic operators should be implemented in the same way:
+class X {
+  X& operator+=(const X& rhs)
+  {
+	// actual addition of rhs to *this
+	return *this;
