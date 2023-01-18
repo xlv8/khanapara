@@ -1904,3 +1904,4 @@ class X {
 };
 inline X operator+(X lhs, const X& rhs)
 {
+  lhs += rhs;
