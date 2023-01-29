@@ -1910,3 +1910,12 @@ inline X operator+(X lhs, const X& rhs)
 
 operator+= returns its result per reference, while operator+ returns a copy of its result. Of course, returning a reference is usually more efficient than returning a copy, but in the case of operator+, there is no way around the copying. When you write a + b, you expect the result to be a new value, which is why operator+ has to return a new value.3
 Also note that operator+ takes its left operand by copy rather than by const reference. The reason for this is the same as the reason giving for operator= taking its argument per copy.
+The bit manipulation operators ~ & | ^ << >> should be implemented in the same way as the arithmetic operators. However, (except for overloading << and >> for output and input) there are very few reasonable use cases for overloading these.
+3 Again, the lesson to be taken from this is that a += b is, in general, more efficient than a + b and should be preferred if possible.
+Array Subscripting
+The array subscript operator is a binary operator which must be implemented as a class member. It is used for container-like types that allow access to their data elements by a key.
+The canonical form of providing these is this:
+class X {
+		value_type& operator[](index_type idx);
+  const value_type& operator[](index_type idx) const;
+  // ...
