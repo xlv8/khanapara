@@ -1920,3 +1920,6 @@ class X {
   const value_type& operator[](index_type idx) const;
   // ...
 };
+
+Unless you do not want users of your class to be able to change data elements returned by operator[] (in which case you can omit the non-const variant), you should always provide both variants of the operator.
+If value_type is known to refer to a built-in type, the const variant of the operator should better return a copy instead of a const reference:
