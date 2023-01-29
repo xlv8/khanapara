@@ -1919,3 +1919,4 @@ class X {
 		value_type& operator[](index_type idx);
   const value_type& operator[](index_type idx) const;
   // ...
+};
