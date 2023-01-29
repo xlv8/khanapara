@@ -1905,3 +1905,8 @@ class X {
 inline X operator+(X lhs, const X& rhs)
 {
   lhs += rhs;
+  return lhs;
+}
+
+operator+= returns its result per reference, while operator+ returns a copy of its result. Of course, returning a reference is usually more efficient than returning a copy, but in the case of operator+, there is no way around the copying. When you write a + b, you expect the result to be a new value, which is why operator+ has to return a new value.3
+Also note that operator+ takes its left operand by copy rather than by const reference. The reason for this is the same as the reason giving for operator= taking its argument per copy.
