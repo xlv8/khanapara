@@ -1928,3 +1928,6 @@ class X {
   value_type  operator[](index_type idx) const;
   // ...
 };
+
+Operators for Pointer-like Types
+For defining your own iterators or smart pointers, you have to overload the unary prefix dereference operator * and the binary infix pointer member access operator ->:
