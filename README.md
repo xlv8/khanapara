@@ -1931,3 +1931,6 @@ class X {
 
 Operators for Pointer-like Types
 For defining your own iterators or smart pointers, you have to overload the unary prefix dereference operator * and the binary infix pointer member access operator ->:
+class my_ptr {
+		value_type& operator*();
+  const value_type& operator*() const;
