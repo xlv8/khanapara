@@ -1934,3 +1934,6 @@ For defining your own iterators or smart pointers, you have to overload the unar
 class my_ptr {
 		value_type& operator*();
   const value_type& operator*() const;
+		value_type* operator->();
+  const value_type* operator->() const;
+};
