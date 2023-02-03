@@ -1937,3 +1937,10 @@ class my_ptr {
 		value_type* operator->();
   const value_type* operator->() const;
 };
+
+Note that these, too, will almost always need both a const and a non-const version.
+For the -> operator, if value_type is of class (or struct or union) type, another operator->() is called recursively, until an operator->() returns a value of non-class type.
+The unary address-of operator should never be overloaded.
+For operator->*() see this question. It's rarely used and thus rarely ever overloaded. In fact, even iterators do not overload it.
+
+Continue to Conversion Operators
