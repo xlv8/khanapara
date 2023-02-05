@@ -1944,3 +1944,11 @@ The unary address-of operator should never be overloaded.
 For operator->*() see this question. It's rarely used and thus rarely ever overloaded. In fact, even iterators do not overload it.
 
 Continue to Conversion Operators
+
+===>
+What are the basic rules and idioms for operator overloading?
+
+The Three Basic Rules of Operator Overloading in C++
+When it comes to operator overloading in C++, there are three basic rules you should follow. As with all such rules, there are indeed exceptions. Sometimes people have deviated from them and the outcome was not bad code, but such positive deviations are few and far between. At the very least, 99 out of 100 such deviations I have seen were unjustified. However, it might just as well have been 999 out of 1000. So you’d better stick to the following rules.
+
+Whenever the meaning of an operator is not obviously clear and undisputed, it should not be overloaded. Instead, provide a function with a well-chosen name.
