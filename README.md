@@ -1958,3 +1958,12 @@ C++ poses no limitations on the semantics of overloaded operators. Your compiler
 Always provide all out of a set of related operations.
 Operators are related to each other and to other operations. If your type supports a + b, users will expect to be able to call a += b, too. If it supports prefix increment ++a, they will expect a++ to work as well. If they can check whether a < b, they will most certainly expect to also to be able to check whether a > b. If they can copy-construct your type, they expect assignment to work as well.
 
+
+Continue to The Decision between Member and Non-member.
+
+===>
+What are the basic rules and idioms for operator overloading?
+
+The General Syntax of operator overloading in C++
+You cannot change the meaning of operators for built-in types in C++, operators can only be overloaded for user-defined types1. That is, at least one of the operands has to be of a user-defined type. As with other overloaded functions, operators can be overloaded for a certain set of parameters only once.
+Not all operators can be overloaded in C++. Among the operators that cannot be overloaded are: . :: sizeof typeid .* and the only ternary operator in C++, ?:
