@@ -1968,3 +1968,8 @@ The General Syntax of operator overloading in C++
 You cannot change the meaning of operators for built-in types in C++, operators can only be overloaded for user-defined types1. That is, at least one of the operands has to be of a user-defined type. As with other overloaded functions, operators can be overloaded for a certain set of parameters only once.
 Not all operators can be overloaded in C++. Among the operators that cannot be overloaded are: . :: sizeof typeid .* and the only ternary operator in C++, ?:
 Among the operators that can be overloaded in C++ are these:
+
+arithmetic operators: + - * / % and += -= *= /= %= (all binary infix); + - (unary prefix); ++ -- (unary prefix and postfix)
+bit manipulation: & | ^ << >> and &= |= ^= <<= >>= (all binary infix); ~ (unary prefix)
+boolean algebra: == != < > <= >= || && (all binary infix); ! (unary prefix)
+memory management: new new[] delete delete[]
