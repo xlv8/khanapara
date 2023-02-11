@@ -1973,3 +1973,5 @@ arithmetic operators: + - * / % and += -= *= /= %= (all binary infix); + - (unar
 bit manipulation: & | ^ << >> and &= |= ^= <<= >>= (all binary infix); ~ (unary prefix)
 boolean algebra: == != < > <= >= || && (all binary infix); ! (unary prefix)
 memory management: new new[] delete delete[]
+implicit conversion operators
+miscellany: = [] -> ->* ,  (all binary infix); * & (all unary prefix) () (function call, n-ary infix)
