@@ -1979,3 +1979,7 @@ miscellany: = [] -> ->* ,  (all binary infix); * & (all unary prefix) () (functi
 However, the fact that you can overload all of these does not mean you should do so. See the basic rules of operator overloading.
 In C++, operators are overloaded in the form of functions with special names. As with other functions, overloaded operators can generally be implemented either as a member function of their left operand's type or as non-member functions. Whether you are free to choose or bound to use either one depends on several criteria.2 A unary operator @3, applied to an object x, is invoked either as operator@(x) or as x.operator@(). A binary infix operator @, applied to the objects x and y, is called either as operator@(x,y) or as x.operator@(y).4
 Operators that are implemented as non-member functions are sometimes friend of their operand’s type.
+1 The term “user-defined” might be slightly misleading. C++ makes the distinction between built-in types and user-defined types. To the former belong for example int, char, and double; to the latter belong all struct, class, union, and enum types, including those from the standard library, even though they are not, as such, defined by users.
+2 This is covered in a later part of this FAQ.
+3 The @ is not a valid operator in C++ which is why I use it as a placeholder.
+4 The only ternary operator in C++ cannot be overloaded and the only n-ary operator must always be implemented as a member function.
