@@ -1975,3 +1975,7 @@ boolean algebra: == != < > <= >= || && (all binary infix); ! (unary prefix)
 memory management: new new[] delete delete[]
 implicit conversion operators
 miscellany: = [] -> ->* ,  (all binary infix); * & (all unary prefix) () (function call, n-ary infix)
+
+However, the fact that you can overload all of these does not mean you should do so. See the basic rules of operator overloading.
+In C++, operators are overloaded in the form of functions with special names. As with other functions, overloaded operators can generally be implemented either as a member function of their left operand's type or as non-member functions. Whether you are free to choose or bound to use either one depends on several criteria.2 A unary operator @3, applied to an object x, is invoked either as operator@(x) or as x.operator@(). A binary infix operator @, applied to the objects x and y, is called either as operator@(x,y) or as x.operator@(y).4
+Operators that are implemented as non-member functions are sometimes friend of their operand’s type.
