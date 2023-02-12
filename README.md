@@ -1983,3 +1983,7 @@ Operators that are implemented as non-member functions are sometimes friend of t
 2 This is covered in a later part of this FAQ.
 3 The @ is not a valid operator in C++ which is why I use it as a placeholder.
 4 The only ternary operator in C++ cannot be overloaded and the only n-ary operator must always be implemented as a member function.
+
+Continue to The Three Basic Rules of Operator Overloading in C++.
+
+------------------------------
