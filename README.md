@@ -1987,3 +1987,4 @@ Operators that are implemented as non-member functions are sometimes friend of t
 Continue to The Three Basic Rules of Operator Overloading in C++.
 
 ------------------------------
+What is the copy-and-swap idiom?
