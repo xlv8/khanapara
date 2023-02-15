@@ -1988,3 +1988,8 @@ Continue to The Three Basic Rules of Operator Overloading in C++.
 
 ------------------------------
 What is the copy-and-swap idiom?
+
+Stopped by user!
+
+Done!
+```
