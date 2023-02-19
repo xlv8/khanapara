@@ -6,3 +6,5 @@ from bs4 import BeautifulSoup
 
 BASE_URL = 'https://stackoverflow.com/questions/tagged/c'
 SORT = '?sort=votes'
+PAGE = '&page='
+PAGE_SIZE_URL = '&pageSize='
