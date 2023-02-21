@@ -19,3 +19,11 @@ headers = {
 def crawl_pages(num_pages):
 	start = 1
 	current_page = start
+	end = start + num_pages
+	while current_page != end:
+		try:
+			page_url = BASE_URL + SORT + PAGE + str(current_page) + PAGE_SIZE_URL + str(PAGE_SIZE)
+			source_code = requests.get(page_url, headers=headers, timeout=10).text
+			soup = BeautifulSoup(source_code, 'html.parser')
+			print('crawling page ' + str(current_page) + ': ' + page_url)
+			q_no = 0
