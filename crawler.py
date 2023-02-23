@@ -27,3 +27,4 @@ def crawl_pages(num_pages):
 			soup = BeautifulSoup(source_code, 'html.parser')
 			print('crawling page ' + str(current_page) + ': ' + page_url)
 			q_no = 0
+			for link in soup.find_all('a', {'class': 'question-hyperlink'}):
