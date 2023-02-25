@@ -40,3 +40,9 @@ def crawl_pages(num_pages):
 		except (KeyboardInterrupt, EOFError, SystemExit):
 			print("\nStopped by user!")
 			break
+
+def parse_question(url, title):
+	page = requests.get(url, headers=headers, timeout=10)
+	soup = BeautifulSoup(page.content, 'html.parser')
+	question = soup.find('div', class_='postcell')
+	if question is not None:
