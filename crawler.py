@@ -28,3 +28,9 @@ def crawl_pages(num_pages):
 			print('crawling page ' + str(current_page) + ': ' + page_url)
 			q_no = 0
 			for link in soup.find_all('a', {'class': 'question-hyperlink'}):
+				if q_no == PAGE_SIZE:
+					break
+				url = 'http://stackoverflow.com/' + link.get('href')
+				title = link.get_text()
+				print("------------------------------")
+				print(title)
