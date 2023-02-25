@@ -34,3 +34,9 @@ def crawl_pages(num_pages):
 				title = link.get_text()
 				print("------------------------------")
 				print(title)
+				parse_question(url, title)
+				q_no += 1
+			current_page += 1
+		except (KeyboardInterrupt, EOFError, SystemExit):
+			print("\nStopped by user!")
+			break
