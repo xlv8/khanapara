@@ -55,3 +55,6 @@ def parse_question(url, title):
 		print("List of answers:\n\n")
 		for i in range(0, end):
 			answer = answers[i].find('div', class_='post-text').get_text()
+			entry = [title, answer]
+			print("===>")
+			print(answer)
