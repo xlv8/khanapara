@@ -49,3 +49,9 @@ def parse_question(url, title):
 		question = list(question)[1].get_text()
 		answers = soup.find_all('div', class_='answercell')
 		end = len(answers)
+		if end > NUM_ANSWERS:
+			end = NUM_ANSWERS
+		print(question)
+		print("List of answers:\n\n")
+		for i in range(0, end):
+			answer = answers[i].find('div', class_='post-text').get_text()
