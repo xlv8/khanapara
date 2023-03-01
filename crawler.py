@@ -46,3 +46,6 @@ def parse_question(url, title):
 	soup = BeautifulSoup(page.content, 'html.parser')
 	question = soup.find('div', class_='postcell')
 	if question is not None:
+		question = list(question)[1].get_text()
+		answers = soup.find_all('div', class_='answercell')
+		end = len(answers)
