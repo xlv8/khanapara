@@ -58,3 +58,6 @@ def parse_question(url, title):
 			entry = [title, answer]
 			print("===>")
 			print(answer)
+
+def main():
+	crawl_pages(2)
