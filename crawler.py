@@ -61,3 +61,6 @@ def parse_question(url, title):
 
 def main():
 	crawl_pages(2)
+	print('\nDone!')
+
+main()
